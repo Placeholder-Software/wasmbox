@@ -9,7 +9,7 @@ const config = {
   title: 'WasmBox',
   tagline: 'WebAssembly For Unity',
   url: 'https://placeholder-software.github.io',
-  baseUrl: '/Wasmbox/',
+  baseUrl: '/wasmbox/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/web-assembly-icon-256px.png',
