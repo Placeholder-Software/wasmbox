@@ -1,0 +1,8 @@
+{
+  "label": "Code",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Reference documentation for using WasmBox in C# code."
+  }
+}

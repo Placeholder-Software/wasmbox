@@ -1,0 +1,8 @@
+{
+  "label": "Reference Docs",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Reference documentation for WasmBox."
+  }
+}
