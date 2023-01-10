@@ -123,3 +123,4 @@ Do not edit the auto generated code! It may be re-generated at any time, which w
     - `Wrap Exported Tables`: Generate a wrapper for every [table](https://webassembly.github.io/spec/core/syntax/modules.html#syntax-table) exported from the WASM module.
 
 :::
+
