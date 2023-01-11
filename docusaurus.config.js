@@ -113,6 +113,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        defaultLanguage: "clike"
       },
       colorMode: {
         respectPrefersColorScheme: true,

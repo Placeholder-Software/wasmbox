@@ -94,9 +94,7 @@ Compress the final WASM to reduce size, this can reduce loading time if storage 
 
 ## 6. Code Generation
 
-If `Generate C# Wrapper Code` is ticked a script will be generated which wraps up the WASM module in a C# accessor. This handles many of the "low level" details of interacting with a WASM module.
-
-**todo: link to code gen docs**
+If `Generate C# Wrapper Code` is ticked a script will be generated which wraps up the WASM module in a C# accessor. This handles many of the "low level" details of interacting with a WASM module. See [this documentation](../code/codegeneration.md) for details on generated wrapper code.
 
 :::caution
 

@@ -1,0 +1,7 @@
+{
+  "label": "Wasmtime",
+  "link": {
+    "type": "generated-index",
+    "description": "Reference documentation for the Wasmtime engine used by WasmBox.",
+  }
+}

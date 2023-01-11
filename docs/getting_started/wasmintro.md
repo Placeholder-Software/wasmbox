@@ -1,5 +1,5 @@
 ---
-title: Introduction To Web Assembly
+title: Introduction To WebAssembly
 sidebar_position: 2
 ---
 
