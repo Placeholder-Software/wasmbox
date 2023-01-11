@@ -7,3 +7,5 @@ stacktrace
 Preinitialize
 cranelift
 wasmtime
+Globals
+globals
