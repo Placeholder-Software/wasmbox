@@ -10,7 +10,7 @@ The `Global` class is a wrapper around the [`wasmtime::Global` struct](https://d
 
 ### `Global.Accessor<T>? Wrap<T>`
 
-Attempt to create a strongly typed "wrapper" around this global. The type of the wrapper is checked when it is created and if the type is incompatible this method will return `null`. Using the wrapper to get and set values does not allocate.
+Attempts to create a strongly typed "wrapper" around this global. The type of the wrapper is checked when it is created and if the type is incompatible this method will return `null`. Using the wrapper to get and set values does not allocate.
 
 ```clike title="Global Accessor"
 var wrapper = global.Wrap<int>();
@@ -49,8 +49,8 @@ Using this method always allocates, prefer using `Wrap`.
 
 ### `ValueKind Kind`
 
-Get the type of this global variable.
+Get the type of this global variable. See more about ValueKind [here](./valuekind.md).
 
 ### `Mutability Mutability`
 
-Get the mutability of this variable.
+Get the a value which indicates if this global is read-only.
