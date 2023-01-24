@@ -2,7 +2,7 @@
 title: Clock
 ---
 
-These WASI methods provide access to a clock.
+These WASI methods provide access to the time.
 
 ## RealtimeClock
 

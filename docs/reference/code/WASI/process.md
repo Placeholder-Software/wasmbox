@@ -2,7 +2,7 @@
 title: Process
 ---
 
-These WASI process methods virtualise a Windows/Linux style "process".
+These WASI methods virtualise a Windows/Linux style "process".
 
 ## VirtualProcess
 
