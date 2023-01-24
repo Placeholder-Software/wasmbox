@@ -10,3 +10,4 @@ wasmtime
 Globals
 globals
 FuncRef
+callback

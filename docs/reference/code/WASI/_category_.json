@@ -1,0 +1,7 @@
+{
+  "label": "WASI",
+  "link": {
+    "type": "generated-index",
+    "description": "Reference documentation for the Web Assembly System Interface (WASI) implementation included in WasmBox."
+  }
+}
