@@ -5,6 +5,8 @@ sidebar_position: 4
 
 An `Engine` is used when a [WASM Asset](wasmasset.md) is loaded into a [`LoadedModule`](loadedmodule.md). The `EngineConfig` controls exactly how the asset is loaded and what features are compiled into the code.
 
+todo:interruption/epoch group
+
 ## Properties
 
 ### `Default`
@@ -40,7 +42,7 @@ Set the optimization priority for generated code:
 
 ### `GetEngine()`
 
-Get the wasmtime `Engine` instance for the current configuration.
+Get the wasmtime `Engine` instance for the current configuration. Wasmbox keeps a cache of all `Engine` objects with the same configuration.
 
 :::warning
 
