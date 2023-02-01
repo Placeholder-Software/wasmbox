@@ -2,13 +2,9 @@
 title: Engine
 ---
 
-An `Engine` is a context for compiling WASM code into native machine code. The `Engine` class is a wrapper around the [`wasmtime::Engine`](https://docs.rs/wasmtime/latest/wasmtime/struct.Engine.html) struct.
+An `Engine` is used to compile WASM code into native machine code ready for execution. The `Engine` class is a wrapper around the [`wasmtime::Engine`](https://docs.rs/wasmtime/latest/wasmtime/struct.Engine.html) struct.
 
-Settings on the engine configure which optional features (e.g.[fuel usage](../../../basics/fuelusage.md), [epoch interruption](../../../basics/epochinterruption.md)) [`Modules`](./module.md) loaded with this `Engine` support. In Wasmbox this is controlled with the [`EngineConfig`](../engineconfig.md).
-
-## Properties
-
-### todo
+Settings on the engine configure which optional features (e.g. [fuel usage](../../../basics/fuelusage.md), [epoch interruption](../../../basics/epochinterruption.md)) [`Modules`](./module.md) loaded with this `Engine` support. In Wasmbox this is controlled with the [`EngineConfig`](../engineconfig.md).
 
 ## Methods
 
