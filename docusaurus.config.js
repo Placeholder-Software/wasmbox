@@ -49,7 +49,14 @@ const config = {
           editUrl:
             'https://github.com/Placeholder-Software/Wasmbox/tree/master/',
         },
-        blog: false,
+        blog: {
+          blogTitle: 'Wasmbox Release Notes',
+          postsPerPage: 5,
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
+          path: "release_notes",
+          routeBasePath: "releases"
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -72,6 +79,7 @@ const config = {
           src: 'img/web-assembly-icon-256px.png',
         },
         items: [
+          {to: 'releases', label: 'Release Notes', position: 'right'}
         ],
       },
       footer: {
