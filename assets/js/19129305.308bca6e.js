@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwasmbox_docs=self.webpackChunkwasmbox_docs||[]).push([[853],{4772:e=>{e.exports=JSON.parse('{"permalink":"/wasmbox/releases/page/2","page":2,"postsPerPage":5,"totalPages":3,"totalCount":13,"previousPage":"/wasmbox/releases","nextPage":"/wasmbox/releases/page/3","blogDescription":"Blog","blogTitle":"Wasmbox Release Notes"}')}}]);

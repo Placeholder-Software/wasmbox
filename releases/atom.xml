@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://placeholder-software.github.io/wasmbox/releases</id>
+    <title>WasmBox Blog</title>
+    <updated>2023-02-13T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://placeholder-software.github.io/wasmbox/releases"/>
+    <subtitle>WasmBox Blog</subtitle>
+    <icon>https://placeholder-software.github.io/wasmbox/img/web-assembly-icon-256px.png</icon>
+    <entry>
+        <title type="html"><![CDATA[v0.0.12]]></title>
+        <id>/v0.0.0 copy 2</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 2"/>
+        <updated>2023-02-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released. Wasmbox is not yet released.  Wasmbox is not yet released.  Wasmbox is not yet released.  Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released. Wasmbox is not yet released.  Wasmbox is not yet released.  Wasmbox is not yet released.  Wasmbox is not yet released. </p><p>Wasmbox is not yet released.  Wasmbox is not yet released. </p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.11]]></title>
+        <id>/v0.0.0 copy 3</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 3"/>
+        <updated>2023-02-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.10]]></title>
+        <id>/v0.0.0 copy 4</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 4"/>
+        <updated>2023-02-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.9]]></title>
+        <id>/v0.0.0 copy 5</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 5"/>
+        <updated>2023-02-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.8]]></title>
+        <id>/v0.0.0 copy 6</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 6"/>
+        <updated>2023-02-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.7]]></title>
+        <id>/v0.0.0 copy 7</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 7"/>
+        <updated>2023-02-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.6]]></title>
+        <id>/v0.0.0 copy 8</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 8"/>
+        <updated>2023-02-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.5]]></title>
+        <id>/v0.0.0 copy 9</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 9"/>
+        <updated>2023-02-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.4]]></title>
+        <id>/v0.0.0 copy 10</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 10"/>
+        <updated>2023-02-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.3]]></title>
+        <id>/v0.0.0 copy 11</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 11"/>
+        <updated>2023-02-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.2]]></title>
+        <id>/v0.0.0 copy 12</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 12"/>
+        <updated>2023-02-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.1]]></title>
+        <id>/v0.0.0 copy 13</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0 copy 13"/>
+        <updated>2023-02-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v0.0.0]]></title>
+        <id>/v0.0.0</id>
+        <link href="https://placeholder-software.github.io/wasmbox/releases/v0.0.0"/>
+        <updated>2023-02-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Wasmbox is not yet released.]]></summary>
+        <content type="html"><![CDATA[<p>Wasmbox is not yet released.</p><p>todo:remove temporary release notes</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a class="hash-link" href="#features-" title="Direct link to heading">​</a></h2><ul><li>None.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a class="hash-link" href="#bugfixes-" title="Direct link to heading">​</a></h2><ul><li>None</li></ul>]]></content>
+    </entry>
+</feed>
