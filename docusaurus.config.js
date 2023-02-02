@@ -131,6 +131,7 @@ const config = {
         maxHeadingLevel: 5,
       },
 
+      //todo: remove this header when asset is released!
       announcementBar: {
         id: 'annoucnement',
         content: 'WasmBox is still in development and is not yet avilable on the asset store!',

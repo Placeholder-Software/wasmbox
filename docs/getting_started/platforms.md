@@ -1,6 +1,6 @@
 ---
 title: Platform Support
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 Wasmbox is built using the [Wasmtime](https://wasmtime.dev/) WebAssembly engine. Wasmbox supported platforms are derived from Wasmtime [supported platforms](https://docs.wasmtime.dev/stability-tiers.html).
