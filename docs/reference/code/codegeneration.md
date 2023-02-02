@@ -21,7 +21,7 @@ For more information see [this tutorial](../../basics/jobs.md) on multithreaded 
 
 ## WebAssembly System Interface (WASI)
 
-todo:[WASI](../../getting_started/wasi_intro.md)
+todo:[WASI](../../basics/wasi.md)
 
 ## Optional Features
 

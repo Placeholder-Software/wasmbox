@@ -40,7 +40,7 @@ Get the total amount of fuel consumed within this `Store`.
 
 ### `void SetWasiConfiguration(WasiConfiguration config)`
 
-Configure this store with [WASI](../../../getting_started/wasi_intro.md) support.
+Configure this store with [WASI](../../../basics/wasi.md) support.
 
 :::caution
 
