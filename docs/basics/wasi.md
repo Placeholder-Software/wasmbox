@@ -2,6 +2,9 @@
 title: WASI
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 todo:wasi
 
 <Tabs queryString="wasi-feature">
