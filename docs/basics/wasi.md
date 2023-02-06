@@ -8,10 +8,19 @@ import TabItem from '@theme/TabItem';
 todo:wasi
 
 <Tabs queryString="wasi-feature">
-  <TabItem value="IVirtualClock" label="WASI Virtual Clock">
+  <TabItem value="ivirtualclock" label="WASI Virtual Clock">
     IVirtualClock
   </TabItem>
-  <TabItem value="IVirtualEnvironment" label="WASI Virtual Environment">
+  <TabItem value="ivirtualenvironment" label="WASI Virtual Environment">
     IVirtualEnvironment
+  </TabItem>
+</Tabs>
+
+<Tabs queryString="current-os">
+  <TabItem value="android" label="Android">
+    Android
+  </TabItem>
+  <TabItem value="ios" label="iOS">
+    iOS
   </TabItem>
 </Tabs>
