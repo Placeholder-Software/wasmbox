@@ -5,23 +5,23 @@ title: WASI
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-WASI stands for **WebAssembly System Interface**. It's an API that provides access to several operating-system-like features, including filesystems, clocks, and random numbers. Wasmbox provides implementations of most WASI functions (see `Assets\Plugins\PlaceholderSoftware\Wasmbox\Core\WASI\`).
+WASI stands for **WebAssembly System Interface**. It's an API that provides access to several operating-system-like features such as filesystems, clocks, and random numbers. Wasmbox provides implementations of most WASI functions (see `Assets\Plugins\PlaceholderSoftware\Wasmbox\Core\WASI\`).
 
-WASI is a way to provide _controlled_ access to certain system resources. For example the virtual file system implemented by Wasmbox can provide in-memory files and folders which are never saved as well as map real files/folders into the virtual files/folders, this allows you to carefully control exactly what can be accessed through WASM code.
+WASI provides _controlled_ access to certain system resources. For example the virtual file system implemented by Wasmbox can provide in-memory files (which are never saved) as well as expose _parts_ of the real file system, allowing you to carefully control exactly what can and cannot be accessed through WASM code. These features can allow untrusted or malicious code to be run safely.
 
 :::caution
 
-WASM execution is normally completely [deterministic](../advanced/determinism.md) - running the same code with the same arguments will produce the same result every time.
-
-Adding WASI features can make execution non-deterministic since it provides access to external resources which are not deterministic (e.g. a clock, which returns a different time every time you read it).
+WASM execution is normally completely [deterministic](../advanced/determinism.md). Adding WASI features can easily break this, since it provides access to external resources which are not deterministic.
 
 :::
 
-WASM Assets which import a WASI function will show a `WASI` indicator next to the functions. Hovering over the indicator will show which WASI feature is required to supply this import, clicking the indicator will bring you to this this documentation page. All WASI features are interfaces which you may implement yourself, or you can use one of the built in implementations.
+## WASI Features
+
+WASM Assets which require a WASI function will show a `WASI` indicator next to the function. Hovering over the indicator will show which WASI feature is required to supply this import, clicking the indicator will bring you to this this documentation page. All WASI features are interfaces which you may implement yourself, or you can use one of the built in implementations.
 
 ![WASI Import](../../static/img/InspectorWasi.png)
 
-<Tabs queryString="wasi-feature">
+<Tabs queryString="feature-name">
 
 <TabItem value="ivirtualrandomsource" label="Random Numbers">
 
