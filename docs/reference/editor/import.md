@@ -69,6 +69,7 @@ If compilation is **disabled** WASM will be stored in a "Universal" format and c
 
  - `Fuel Usage`: Compile with support for [Fuel Usage](/basics/fuelusage.md).
  - `Epoch Interruption`: Compile with support for [Epoch Interruption](/basics/epochinterruption.md).
+ - `SIMD`: Enable SIMD instructions (faster, but [non-deterministic](./../../advanced/determinism.md)).
  - `Cranelift Compiler Settings`: Enable specific feature flags in the [cranelift](https://github.com/bytecodealliance/wasmtime/tree/main/cranelift) compiler. The CPU used at runtime must support these features for the precompiled WASM to be loaded, if they are not supported the `Universal` fallback will be used instead (equivalent to not precompiling).
 
 :::

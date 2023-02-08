@@ -3,7 +3,7 @@ title: Generated Code
 sidebar_position: 6
 ---
 
-When a `*.wasm` or `*.wat` file is [imported](../editor/import.md) the option `Generate C# Wrpaper Code` can be enabled to automatically generate a C# script which "wraps" the WASM module. This wrapper code handles most of the "low level" details of interacting with an instantiated WASM module.
+When a `*.wasm` or `*.wat` file is [imported](../editor/import.md) the option `Generate C# Wrapper Code` can be enabled to automatically generate a C# script which "wraps" the WASM module. This wrapper code handles most of the "low level" details of interacting with an instantiated WASM module.
 
 :::caution
 
@@ -21,7 +21,11 @@ For more information see [this tutorial](../../basics/jobs.md) on multithreaded 
 
 ## WebAssembly System Interface (WASI)
 
-todo:[WASI](../../basics/wasi.md)
+WebAssembly System Interface ([WASI](../../basics/wasi.md)) is a set of APIs which allow access to system resources (such as the filesystem) in a tightly controlled way. If a WASM asset imports any functions which are part of the WASI spec they will be marked in the inspector:
+
+![WASI Import](../../../static/img/InspectorWasi.png)
+
+These functions must be defined in the [`Linker`](./wasmtime/linker.md) before the module can be used. Wasmbox provides implementations of most WASI functions ([see documentation here](/category/wasi)). Hovering over the `WASI` marker in the editor will tell you which WASI implementation is required.
 
 ## Optional Features
 

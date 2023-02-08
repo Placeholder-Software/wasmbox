@@ -29,6 +29,10 @@ Include support for `Epoch Interruption` in compiled code. When enabled executin
 
 For more details on epoch interruption, see [this tutorial](/basics/epochinterruption.md).
 
+### `SIMD`
+
+Enable SIMD instructions in compiled code. This can be significantly faster but may be [non-deterministic](./../../advanced/determinism.md).
+
 ### `EpochGroup`
 
 All identical `EngineConfig` objects will share the same underlying `Engine`. However when `Engine.IncrementEpoch()` is called it applies to _all_ instances created by that `Engine`, which may be undesirable. The `EpochGroup` is a way to force two `EngineConfig` objects to not be identical.
