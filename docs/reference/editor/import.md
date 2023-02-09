@@ -65,7 +65,7 @@ If compilation is **disabled** WASM will be stored in a "Universal" format and c
 
 :::tip Inspector Options
 
-![Optimization Inspector](/img/CompilationInspector.png)
+![Compilation Inspector](/img/CompilationInspector.png)
 
  - `Fuel Usage`: Compile with support for [Fuel Usage](/basics/fuelusage.md).
  - `Epoch Interruption`: Compile with support for [Epoch Interruption](/basics/epochinterruption.md).
@@ -80,7 +80,7 @@ Compress the final WASM to reduce size, this can reduce loading time if storage 
 
 :::tip Inspector Options
 
-![Optimization Inspector](/img/CompressionInspector.png)
+![Compression Inspector](/img/CompressionInspector.png)
 
  - `Compression Level`
     - Set the amount of work the compressor will do. This corresponds to [this option](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.compressionlevel?view=netstandard-2.0) in the .NET compressor.
@@ -105,7 +105,7 @@ Do not edit the auto generated code! It may be re-generated at any time, which w
 
 :::tip Inspector Options
 
-![Optimization Inspector](/img/CodeGenerationInspector.png)
+![Code Generation Inspector](/img/CodeGenerationInspector.png)
 
  - Naming
     - `Namespace`: C# namespace for the generated wrapper code.

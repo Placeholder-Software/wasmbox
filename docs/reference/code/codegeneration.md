@@ -67,7 +67,8 @@ If `Trap handling` is set to `Return Result` then every WASM function will retur
 var result = wrapper.hello();
 if (result.Type == ResultType.Ok)
 {
-    Debug.Log("WASM Result: " + result.Value);
+    var value = result.Value;
+    Debug.Log("WASM Result: " + value);
 }
 else
 {

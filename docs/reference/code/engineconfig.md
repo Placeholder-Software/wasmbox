@@ -52,6 +52,10 @@ Set the optimization priority for generated code:
 
 Get the wasmtime `Engine` instance for the current configuration. Wasmbox keeps a cache of all `Engine` objects with the same configuration.
 
+### `GetEpochGroup()`
+
+Get an `IEpochHandle` which can be used to incremented the epoch for this `Engine`.
+
 :::warning
 
 The `Engine` object returned from this method **must not** be disposed!

@@ -1,6 +1,6 @@
 ---
 title: Using WASM In Scripts
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 todo:basic usage of WASM
