@@ -38,11 +38,11 @@ store.SetEpochDeadline(100);
 
 ## Incrementing The Epoch
 
-The epoch is incremented on the [`Engine`](../reference/code/wasmtime/engine.md), through an [`EngineConfig`](../reference/code/engineconfig#getepochgroup).
+The epoch is incremented on the [`Engine`](../reference/code/wasmtime/engine.md), through an [`EngineConfig`](../reference/code/engineconfig.md#getepochgroup).
 
 :::tip
 
-All WASM Instances loaded with the same [`EngineConfig`](../reference/code/engineconfig) share the same epoch. Use [`EpochGroup`](../reference/code/engineconfig.md#epochgroup) to split up identical engine configs if necessary.
+All WASM Instances loaded with the same [`EngineConfig`](../reference/code/engineconfig.md) share the same epoch. Use [`EpochGroup`](../reference/code/engineconfig.md#epochgroup) to split up identical engine configs if necessary.
 
 :::
 
