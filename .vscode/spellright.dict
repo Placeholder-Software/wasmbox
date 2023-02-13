@@ -13,3 +13,4 @@ FuncRef
 callback
 Addressables
 callbacks
+threadsafe
