@@ -52,7 +52,7 @@ EngineConfig config = EngineConfig.Default;
 var handle = config.GetEpochGroup();
 
 if (handle == null)
-    throw new NotImplementedException("EpochGroup handle is null if config.UseEpochInterruption is false!");
+    throw new NotImplementedException("handle is null if config.UseEpochInterruption is false!");
 
 handle.SetEpoch(Time.frameCount);
 ```

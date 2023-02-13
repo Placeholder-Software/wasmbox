@@ -12,3 +12,4 @@ globals
 FuncRef
 callback
 Addressables
+callbacks

@@ -1,0 +1,1 @@
+todo:linker basics
