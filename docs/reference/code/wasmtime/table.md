@@ -2,7 +2,7 @@
 title: Table
 ---
 
-A `Table` represents a list references. The `Table` class is a wrapper around the [`wasmtime::Table`](https://docs.rs/wasmtime/latest/wasmtime/struct.Table.html) struct.
+A `Table` represents a list references which cannot be stored as bytes in [`Memory`](./memory.md) for safety and portability reasons.. The `Table` class is a wrapper around the [`wasmtime::Table`](https://docs.rs/wasmtime/latest/wasmtime/struct.Table.html) struct.
 
 ## Properties
 

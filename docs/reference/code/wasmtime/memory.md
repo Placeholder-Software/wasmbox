@@ -2,7 +2,7 @@
 title: Memory
 ---
 
-A `Memory` represents a contiguous array of bytes. The `Memory` class is a wrapper around the [`wasmtime::Memory`](https://docs.rs/wasmtime/latest/wasmtime/struct.Memory.html) struct.
+A `Memory` represents a contiguous array of bytes that WASM code can read and write. The `Memory` class is a wrapper around the [`wasmtime::Memory`](https://docs.rs/wasmtime/latest/wasmtime/struct.Memory.html) struct.
 
 ## Properties
 

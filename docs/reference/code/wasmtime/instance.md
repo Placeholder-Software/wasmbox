@@ -2,7 +2,7 @@
 title: Instance
 ---
 
-An `Instance` is an instantiation of a [`Module`](./module.md) through which you to execute WASM code. The `Instance` class is a wrapper around the [`wasmtime::Instance`](https://docs.rs/wasmtime/latest/wasmtime/struct.Instance.html) struct.
+An `Instance` is an instantiation of a [`Module`](./module.md), which can be used to execute WASM code. The `Instance` class is a wrapper around the [`wasmtime::Instance`](https://docs.rs/wasmtime/latest/wasmtime/struct.Instance.html) struct.
 
 Constructing an `Instance` is usually done with a [`Linker`](./linker.md) which provides all the imports the [`Module`](./module.md) requires.
 
