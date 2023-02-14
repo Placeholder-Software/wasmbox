@@ -4,7 +4,7 @@ title: Module
 
 A `Module` represents WASM code that has been compiled by an [`Engine`](engine.md) into executable machine code. The `Module` class is a wrapper around the [`wasmtime::Module`](https://docs.rs/wasmtime/latest/wasmtime/struct.Module.html) struct. A `Module` declares a set of imports (things it requires) and exports (things it provides).
 
-The [`Engine`](./engine.md) which is used controls exactly how the WASM is compiled into a `Module`. For example if the [`Engine`](./engine.md) has [fuel usage](../../../basics/fuelusage.md) enabled the `Module` will be compiled with support for fuel usage. It is possible to have multiple modules which represent the same WASM code compiled with different engines. An [`Engine`](./engine.md) in WasmBox is usually configured with an [`EngineConfig`](./../engineconfig.md).
+The [`Engine`](./engine.md) which is used controls exactly how the WASM is compiled into a `Module`. For example if the [`Engine`](./engine.md) has [fuel usage](../../../basics/fuelusage.md) enabled the `Module` will be compiled with support for fuel usage. It is possible to have multiple modules which represent the same WASM code compiled with different engines. An [`Engine`](./engine.md) in Wasmbox is usually configured with an [`EngineConfig`](./../engineconfig.md).
 
 ## Properties
 

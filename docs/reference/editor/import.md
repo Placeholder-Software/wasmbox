@@ -3,7 +3,7 @@ title: Importing WebAssembly
 sidebar_position: 1
 ---
 
-WasmBox includes an import pipeline for WASM assets which validates, initialises, optimises, precompiles and compresses the WASM. Any `*.wasm` (binary WebAssembly) or `*.wat` (text WebAssembly) files will automatically be processed and imported through this pipeline into a [WasmAsset](wasmasset.md).
+Wasmbox includes an import pipeline for WASM assets which validates, initialises, optimises, precompiles and compresses the WASM. Any `*.wasm` (binary WebAssembly) or `*.wat` (text WebAssembly) files will automatically be processed and imported through this pipeline into a [WasmAsset](wasmasset.md).
 
 ## 1. Validation
 

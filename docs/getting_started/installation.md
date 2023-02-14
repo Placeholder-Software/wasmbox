@@ -16,6 +16,15 @@ The asset will be installed into `Assets/Plugins/PlaceholderSoftware/Wasmbox`
 
 ## Optional Extras
 
+### Assembly Definitions
+
+If you application is using [Assembly definitions](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) to organise scripts you must add a reference to Wasmbox before you can use it.
+
+To reference Wasmbox:
+1. Select your `.asmdef` file
+2. Add a new item to the `Assembly Definition References` list
+3. Place `Wasmbox` into the new entry
+
 ### Addressables
 
 Wasmbox can make use of the Unity [Addressable Asset System](https://docs.unity3d.com/Manual/com.unity.addressables.html) to asynchronously load content and to simplify managing WASM dependencies.

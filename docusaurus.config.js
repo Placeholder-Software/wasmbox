@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'WasmBox',
+  title: 'Wasmbox',
   tagline: 'WebAssembly For Unity',
   url: 'https://placeholder-software.github.io',
   baseUrl: '/wasmbox/',
@@ -73,12 +73,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        { name: "og:title", content: "WasmBox" },
+        { name: "og:title", content: "Wasmbox" },
         { name: "og:description", content: "WebAssembly For Unity" },
         { name: "og:image", content: "https://placeholder-software.github.io/Wasmbox/img/web-assembly-icon-64px.png" },
       ],
       navbar: {
-        title: 'WasmBox: WebAssembly For Unity',
+        title: 'Wasmbox: WebAssembly For Unity',
         logo: {
           alt: 'WASM Logo',
           src: 'img/web-assembly-icon-256px.png',
@@ -139,7 +139,7 @@ const config = {
       //todo: remove this header when asset is released!
       announcementBar: {
         id: 'annoucnement',
-        content: 'WasmBox is still in development and is not yet avilable on the asset store!',
+        content: 'Wasmbox is still in development and is not yet avilable on the asset store!',
         backgroundColor: 'rgb(236, 54, 77)',
         //textColor: '#091E42',
         //isCloseable: false,
