@@ -138,7 +138,7 @@ const config = {
 
       //todo: remove this header when asset is released!
       announcementBar: {
-        id: 'annoucnement',
+        id: 'announcement',
         content: 'Wasmbox is still in development and is not yet avilable on the asset store!',
         backgroundColor: 'rgb(236, 54, 77)',
         //textColor: '#091E42',
