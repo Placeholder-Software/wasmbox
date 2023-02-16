@@ -27,7 +27,7 @@ graph LR;
 
 ### At Runtime
 
-It is possible to load wasm or wat at runtime, without importing it in the editor, by using [`DynamicWasmAsset`](../reference/code/dynamicwasmasset.md) or even a custom implementation of [`IWasmAsset`](../advanced/customwasmasset.md). All of these options produce something that can be used in the same way as an editor imported [`WASM Asset`](../reference/code/wasmasset.md).
+It is possible to load wasm or wat at runtime, without importing it in the editor, by using [`DynamicWasmAsset`](../reference/code/dynamicwasmasset.md) or even a custom implementation of [`IWasmAsset`](../reference/code/iwasmasset.md). All of these options produce something that can be used in the same way as an editor imported [`WASM Asset`](../reference/code/wasmasset.md).
 
 :::tip
 
