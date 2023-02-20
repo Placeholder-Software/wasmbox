@@ -1,5 +1,6 @@
 ---
-title: Epoch Interruption
+title: Limiting Execution Time (Epochs)
+sidebar_position: 3
 ---
 
 import Tabs from '@theme/Tabs';
@@ -7,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 When executing WASM code it is sometimes useful to set a limit on how long it can run for. This can be used to prevent potentially malicious or buggy code from running forever and slowing down your application. Wasmbox includes two mechanisms to do this, [Epoch Interruption](./epochinterruption.md) and [Fuel Usage](./fuelusage.md).
 
-Epoch interruption allows a deadline to be set, once that deadline has passed executing code will immediately terminate execution. Epochs are not automatically incremented, your own script must be increasing the epoch when you wish to indicate that time has passed. For example WASM executing within a [Job](./jobs.md) while the main thread increments the epoch every frame.
+Epoch interruption allows a deadline to be set, once that deadline has passed executing code will immediately terminate execution. Epochs are not automatically incremented, your own script must be increasing the epoch when you wish to indicate that time has passed. For example WASM executing within a [Job](../jobs.md) while the main thread increments the epoch every frame.
 
 :::tip
 Epoch Interruption is faster than fuel usage, but requires another thread to increment epochs.
@@ -15,20 +16,24 @@ Epoch Interruption is faster than fuel usage, but requires another thread to inc
 
 ## Enabling Epoch Interruption
 
-Epoch Interruption must be enabled in the [`EngineConfig`](../reference/code/engineconfig.md) used to load a WASM Asset:
+Epoch Interruption must be enabled in the [`EngineConfig`](../../reference/code/engineconfig.md) used to load a WASM Asset:
 
 ```clike
 EngineConfig config = EngineConfig.Default;
 config.UseEpochInterruption = true;
 ```
 
-If the WASM Asset is precompiled it must **also** be enabled in the [importer](../reference/editor/import.md#4-compilation):
+:::tip
+
+If the WASM Asset is precompiled it must **also** be enabled in the [importer](../../reference/editor/import.md#4-compilation):
 
 ![Compilation Inspector](/img/CompilationInspector.png)
 
+:::
+
 ## Setting A Limit
 
-The Epoch limit is set on a [`Store`](../reference/code/wasmtime/store.md), all [`Instances`](../reference/code/wasmtime/instance.md) sharing a `Store` share the same epoch deadline.
+The Epoch limit is set on a [`Store`](../../reference/code/wasmtime/store.md), all [`Instances`](../../reference/code/wasmtime/instance.md) sharing a `Store` share the same epoch deadline.
 
 ```clike
 Store store; // Get a store from somewhere
@@ -38,11 +43,11 @@ store.SetEpochDeadline(100);
 
 ## Incrementing The Epoch
 
-The epoch is incremented on the [`Engine`](../reference/code/wasmtime/engine.md), through an [`EngineConfig`](../reference/code/engineconfig.md#getepochgroup).
+The epoch is incremented on the [`Engine`](../../reference/code/wasmtime/engine.md), through an [`EngineConfig`](../../reference/code/engineconfig.md#getepochgroup).
 
 :::tip
 
-All WASM Instances loaded with the same [`EngineConfig`](../reference/code/engineconfig.md) share the same epoch. Use [`EpochGroup`](../reference/code/engineconfig.md#epochgroup) to split up identical engine configs if necessary.
+All WASM Instances loaded with the same [`EngineConfig`](../../reference/code/engineconfig.md) share the same epoch. Use [`EpochGroup`](../../reference/code/engineconfig.md#epochgroup) to split up identical engine configs if necessary.
 
 :::
 
@@ -59,7 +64,7 @@ handle.SetEpoch(Time.frameCount);
 
 ## Handling An Epoch Timeout
 
-WASM function calls through the Wasmbox [generated wrapper code](../reference/code/codegeneration.md#trap-handling) have two trap handling methods: exceptions and results. Set the `Trap Handling` option in the importer to choose which one to use.
+WASM function calls through the Wasmbox [generated wrapper code](../../reference/code/codegeneration.md#trap-handling) have two trap handling methods: exceptions and results. Set the `Trap Handling` option in the importer to choose which one to use.
 
 <Tabs>
 

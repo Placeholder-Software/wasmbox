@@ -15,7 +15,7 @@ Get an `EngineConfig` with default settings.
 
 Enable "fuel consumption" for WASM code. When enabled each instruction will consume "fuel" and execution will terminate when out of fuel. This can be used to protect against buggy or malicious code taking too much time executing.
 
-For more details on fuel consumption, see [this tutorial](/basics/fuelusage.md).
+For more details on fuel consumption, see [this tutorial](/docs/basics/limiting_execution/fuelusage.md).
 
 :::tip
 
@@ -27,7 +27,7 @@ Fuel consumption can significantly slow down the execution of WASM code.
 
 Include support for `Epoch Interruption` in compiled code. When enabled executing WebAssembly code can be interrupted by an external signal from another thread.
 
-For more details on epoch interruption, see [this tutorial](/basics/epochinterruption.md).
+For more details on epoch interruption, see [this tutorial](/docs/basics/limiting_execution/epochinterruption.md).
 
 ### `SIMD`
 
@@ -37,7 +37,7 @@ Enable SIMD instructions in compiled code. This can be significantly faster but 
 
 All identical `EngineConfig` objects will share the same underlying `Engine`. However when `Engine.IncrementEpoch()` is called it applies to _all_ instances created by that `Engine`, which may be undesirable. The `EpochGroup` is a way to force two `EngineConfig` objects to not be identical.
 
-For more details on epoch interruption, see [this tutorial](/basics/epochinterruption.md).
+For more details on epoch interruption, see [this tutorial](/docs/basics/limiting_execution/epochinterruption.md).
 
 ### `OptimizationLevel`
 

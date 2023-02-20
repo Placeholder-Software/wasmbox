@@ -67,9 +67,9 @@ If compilation is **disabled** WASM will be stored in a "Universal" format and c
 
 ![Compilation Inspector](/img/CompilationInspector.png)
 
- - `Fuel Usage`: Compile with support for [Fuel Usage](/basics/fuelusage.md).
- - `Epoch Interruption`: Compile with support for [Epoch Interruption](/basics/epochinterruption.md).
- - `SIMD`: Enable SIMD instructions (faster, but [non-deterministic](./../../advanced/determinism.md)).
+ - `Fuel Usage`: Compile with support for [Fuel Usage](/basics/limiting_execution/fuelusage.md).
+ - `Epoch Interruption`: Compile with support for [Epoch Interruption](/basics/limiting_execution/epochinterruption.md).
+ - `SIMD`: Enable SIMD instructions (faster, but [non-deterministic](/advanced/determinism.md)).
  - `Cranelift Compiler Settings`: Enable specific feature flags in the [cranelift](https://github.com/bytecodealliance/wasmtime/tree/main/cranelift) compiler. The CPU used at runtime must support these features for the precompiled WASM to be loaded, if they are not supported the `Universal` fallback will be used instead (equivalent to not precompiling).
 
 :::
@@ -95,7 +95,7 @@ Compress the final WASM to reduce size, this can reduce loading time if storage 
 
 ## 6. Code Generation
 
-If `Generate C# Wrapper Code` is ticked a script will be generated which wraps up the WASM module in a C# accessor. This handles many of the "low level" details of interacting with a WASM module. See [this documentation](../code/codegeneration.md) for details on generated wrapper code.
+If `Generate C# Wrapper Code` is ticked a script will be generated which wraps up the WASM module in a C# accessor. This handles many of the "low level" details of interacting with a WASM module. See [this documentation](/reference/code/codegeneration.md) for details on generated wrapper code.
 
 :::caution
 

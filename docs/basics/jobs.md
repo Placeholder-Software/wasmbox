@@ -45,7 +45,7 @@ the_wrapper.CallSomeWasmFunction();
 
 ### 3. Epochs (Optional)
 
-You may want to put a limit on how long WASM code can run for in a job. This can be done with [`Epoch Interruption`](./epochinterruption.md).
+You may want to put a limit on how long WASM code can run for in a job. This can be done with [`Epoch Interruption`](/docs/basics/limiting_execution/epochinterruption.md).
 
 To setup epoch interruption:
 1. Call `SetEpochDeadline(the_deadline)` on the store.

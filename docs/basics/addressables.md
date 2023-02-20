@@ -1,9 +1,8 @@
 ---
 title: Addressable Loading
+sidebar_position: 1
 ---
 
 todo:addressables tutorial
 
- - reference:
-  - Unity.ResourceManager
-  - Unity.Addressables
+`AddressableWasmMonoBehaviour`

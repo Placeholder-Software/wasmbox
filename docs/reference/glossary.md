@@ -1,9 +1,9 @@
 ---
 title: Engines, Modules, Stores & Instances 😵
-sidebar_position: 1
+sidebar_position: 0
 ---
 
-There are several stages to go through in the process of taking a `.wasm` file and loading it into executable code. This document explains the stages at a high level.
+There are several stages to go through in the process of taking a `.wasm` file and loading it into executable code. This document explains the stages and the various objects involved at a high level.
 
 ## Importing
 
@@ -99,7 +99,7 @@ A WASM [`Instance`](../reference/code/wasmtime/instance.md) has no state (i.e. m
 
 ### Linker
 
-By default WASM execution is completely "sandboxed", executing WASM code cannot access anything outside of the box. This makes it safe to run malicious code, and easy to ensure [determinism](../advanced/determinism.md). The [`Linker`](../reference/code/wasmtime/linker.md) allows you to expose certain C# methods to WASM code, allowing it to call those methods. For example [WASI](./wasi.md) features.
+By default WASM execution is completely "sandboxed", executing WASM code cannot access anything outside of the box. This makes it safe to run malicious code, and easy to ensure [determinism](../advanced/determinism.md). The [`Linker`](../reference/code/wasmtime/linker.md) allows you to expose certain C# methods to WASM code, allowing it to call those methods. For example [WASI](./../basics/wasi.md) features.
 
 ```clike
 int Add(int a, int b)

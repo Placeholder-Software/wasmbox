@@ -39,7 +39,7 @@ For more information see [this tutorial](../../basics/addressables.md) on addres
 
 ### Trap Handling
 
-Certain events (e.g. [running out of fuel](../../basics/fuelusage.md)) can interrupt execution of WASM code, this is called a "Trap". A trap is very similar to a C# exception - when it is triggered it immediately interrupts execution and "unwinds" the execution stack back out of the WASM engine. Code which calls into WASM must be aware that a trap can happen and be prepared to handle it.
+Certain events (e.g. [running out of fuel](/docs/basics/limiting_execution/fuelusage.md)) can interrupt execution of WASM code, this is called a "Trap". A trap is very similar to a C# exception - when it is triggered it immediately interrupts execution and "unwinds" the execution stack back out of the WASM engine. Code which calls into WASM must be aware that a trap can happen and be prepared to handle it.
 
 The function wrappers which are generated can indicate a trap in one of two ways: **Exceptions** or **Results**.
 

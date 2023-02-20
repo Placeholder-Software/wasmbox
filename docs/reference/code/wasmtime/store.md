@@ -26,13 +26,13 @@ It is not required to actively call this function. GC will automatically happen 
 
 ### `void AddFuel(ulong fuel)`
 
-Adds fuel to this `Store` for WebAssembly code to consume while executing. See [this guide](../../../basics/fuelusage.md) for more information on fuel consumption.
+Adds fuel to this `Store` for WebAssembly code to consume while executing. See [this guide](/basics/limiting_execution/fuelusage.md) for more information on fuel consumption.
 
 ### `ulong ConsumeFuel(ulong fuel)`
 
 Remove fuel from this `Store` and returns the remaining amount of fuel. Throw `WasmtimeException` if there is insufficient fuel available.
 
-See [this guide](../../../basics/fuelusage.md) for more information on fuel consumption.
+See [this guide](/basics/limiting_execution/fuelusage.md) for more information on fuel consumption.
 
 ### `ulong GetConsumedFuel()`
 
@@ -50,7 +50,7 @@ Calling this method is not required if using the Wasmbox [WASI](../../../basics/
 
 ### `void SetEpochDeadline(ulong ticksBeyondCurrent)`
 
-Configure the epoch deadline for execution. See [this guide](../../../basics/epochinterruption.md) for more information on epoch interruption.
+Configure the epoch deadline for execution. See [this guide](/basics/limiting_execution/epochinterruption.md) for more information on epoch interruption.
 
 ### `object? GetData()`
 
