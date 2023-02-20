@@ -20,4 +20,6 @@ A `ValueKind` represents all of the possible types of a WebAssembly value. This 
 
 ### ExternRef
 
-ExternRef represents an "opaque" reference to any data within WebAssembly. Any C# reference type (anything derived from `object`) can be passed as an `ExternRef`.
+ExternRef represents an **opaque** reference to any data within WebAssembly. Any C# reference type (anything derived from `object`) can be passed as an `ExternRef`. WASM code cannot create new `externref` values. WASM code cannot do anything with an `externref`, other than pass it as an argument to other functions.
+
+These properties make `externref` objects useful as "capabilities" which WASM can access. For example if you pass a `GameObject` into some WASM code as an `externref` and the same code later passes you back a `GameObject` you know that it **must** be an object you gave to the WASM earlier, because it is impossible for WASM to create new `externref` values.

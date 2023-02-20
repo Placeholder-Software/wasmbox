@@ -7,7 +7,17 @@ Once a WASM module has been instantiated WASM code can be executed in a complete
 
 ## Limitations
 
-todo:type limitations
+WASM supports a [very limited set of types](/docs/reference/code/wasmtime/valuekind.md), functions defined in the [`Linker`](/docs/reference/code/wasmtime/linker.md) can only use these types:
+
+| WASM Type | C# Type |
+| --------- | ----------- |
+| i32       | `int`       |
+| i64       | `long`      |
+| f32       | `float`     |
+| f64       | `double`    |
+| externref | Any `class`/`object` |
+| funcref   | `Wasmtime.Function`  |
+| v128      | `Wasmtime.V128` |
 
 ## Example
 
@@ -48,6 +58,12 @@ Linker linker;
 linker.DefineInstance(store, "the_name", instance);
 ```
 
+:::tip
+
+This is an advanced use case which requires manually loading and instantiating modules! [Read more](./../advanced/manual_loading.md).
+
+:::
+
 ### Defining A Module
 
 ```clike
@@ -55,6 +71,12 @@ Module module;
 Linker linker;
 linker.DefineModule(store, module);
 ```
+
+:::tip
+
+This is an advanced use case which requires manually loading modules! [Read more](./../advanced/manual_loading.md).
+
+:::
 
 ## WASI
 

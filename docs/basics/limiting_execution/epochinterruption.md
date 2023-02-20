@@ -1,6 +1,6 @@
 ---
-title: Epochs Interruption
-sidebar_position: 3
+title: Epoch Interruption
+sidebar_position: 2
 ---
 
 import Tabs from '@theme/Tabs';

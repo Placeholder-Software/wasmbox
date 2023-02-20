@@ -1,0 +1,1 @@
+todo: article about manually loading assets, creating modules, configuring the linker/store and instantiating them
