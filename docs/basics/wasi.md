@@ -6,7 +6,7 @@ sidebar_position: 3
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-WASI stands for **WebAssembly System Interface**. It's an API that provides access to several operating-system-like features such as filesystems, clocks, and random numbers. Wasmbox provides implementations of most WASI functions (see `Assets\Plugins\PlaceholderSoftware\Wasmbox\Core\WASI\`).
+WASI stands for **WebAssembly System Interface**. It's a spec that provides access to several operating-system-like features such as filesystems, clocks, and random numbers. Wasmbox provides implementations of most WASI functions (see `Assets\Plugins\PlaceholderSoftware\Wasmbox\Core\WASI\`).
 
 WASI provides _controlled_ access to certain system resources. For example the virtual file system implemented by Wasmbox can provide in-memory files (which are never saved) as well as expose _parts_ of the real file system, allowing you to carefully control exactly what can and cannot be accessed through WASM code. These features can allow untrusted or malicious code to be run safely.
 
@@ -30,7 +30,7 @@ Random number generation is provided by an implementation of [`IVirtualRandomSou
 
 ```clike
 var rng = new CryptoRandomSource();
-linker.Add(rng);
+linker.Define(rng);
 ```
 
 </TabItem>
@@ -41,7 +41,7 @@ Functions which would normally be associated with an OS "Process" are provided b
 
 ```clike
 var proc = new VirtualProcess(OnExit);
-linker.Add(proc);
+linker.Define(proc);
 
 void OnExit(uint code)
 {
@@ -65,7 +65,7 @@ var builder = new VirtualFileSystemBuilder()
             })
     });
 
-linker.Add(builder.Build());
+linker.Define(builder.Build());
 ```
 
 </TabItem>
@@ -80,7 +80,7 @@ var env = new VirtualEnvironment()
     .SetEnvironmentVariable("foo", "bar")                   // Create a variable named "foo" with value "bar"
     .SetArgs("--foo", "--bar", "bash", "-b", "-a", "-z"));  // Set the WASM process arguments
 
-linker.Add(env);
+linker.Define(env);
 ```
 
 </TabItem>
@@ -91,7 +91,7 @@ Functions which get the current system time are provided by an implementation of
 
 ```clike
 var clock = new RealtimeClock();
-linker.Add(clock);
+linker.Define(clock);
 ```
 
 </TabItem>
