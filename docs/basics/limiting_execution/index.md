@@ -1,13 +1,17 @@
 ---
 title: Limiting Execution Time
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 When executing WASM code it is sometimes useful to set a limit on how long it can run for. This can be used to prevent malicious or buggy code from running forever and slowing down your application. Wasmbox includes two mechanisms to do this, [Fuel Usage](./fuelusage.md) and [Epoch Interruption](./epochinterruption.md).
 
 ## Fuel Usage
 
-todo
+[Fuel Usage](./fuelusage.md) adds a "fuel" cost to every single instruction which is executed, as soon as there is no more fuel available execution will terminate. Fuel usage is easy to use and allows very precise control over _exactly_ how much code can execute before termination.
+
+:::tip
+Fuel execution is more precise than epochs, but is slower to execute.
+:::
 
 ## Epoch Interruption
 
@@ -18,5 +22,5 @@ Epochs are **not** automatically incremented, your own code must be increasing t
 Because epochs are not automatically incremented your WASM code must be running in another thread, such as a [Job](/docs/basics/jobs.md), so that your code running on the main thread can increment the epoch.
 
 :::tip
-Epoch Interruption is faster than fuel usage, but is more difficult to use.
+Epoch Interruption is faster than fuel usage, but is more difficult to use (requires jobs).
 :::

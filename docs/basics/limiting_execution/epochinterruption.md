@@ -1,5 +1,5 @@
 ---
-title: Limiting Execution Time (Epochs)
+title: Epochs Interruption
 sidebar_position: 3
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: WASM In Jobs
+sidebar_position: 5
 ---
 
 The wrapper code which Wasmbox automatically generates is designed to work within the [Unity Job safety system](https://docs.unity3d.com/2020.1/Documentation/Manual/JobSystemSafetySystem.html). A wrapper requires **write** access for **every** operation, so it can only be used within one single job.

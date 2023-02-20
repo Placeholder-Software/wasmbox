@@ -1,6 +1,6 @@
 ---
-title: Limiting Execution Time (Fuel)
-sidebar_position: 2
+title: Fuel Usage
+sidebar_position: 1
 ---
 
 import Tabs from '@theme/Tabs';
