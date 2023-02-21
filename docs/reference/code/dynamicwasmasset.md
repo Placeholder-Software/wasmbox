@@ -13,7 +13,7 @@ If non-null the [`Module`](./../code/wasmtime/module.md)s loaded from this asset
 
 :::caution
 
-Creating multiple `DynamicWasAsset`s with the same `CacheKey` but different WASM/WAT code will lead to unpredictable behaviour!
+Creating multiple `DynamicWasmAsset`s with the same `CacheKey` but different WASM/WAT code will lead to unpredictable behaviour!
 
 :::
 

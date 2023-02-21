@@ -16,3 +16,4 @@ callbacks
 threadsafe
 externref
 wasi
+img

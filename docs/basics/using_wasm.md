@@ -8,13 +8,9 @@ import WasmDemoScriptInspector from '/img/WasmDemoScriptInspector.png';
 
 This tutorial will walk you through importing a WASM file into the editor and using the [`SimpleWasmMonoBehaviour`](/docs/reference/code/simplewasmmonobehaviour.md) to instantiate a WASM module in a script.
 
-## Other Options
-
-`SimpleWasmMonoBehaviour` is not the only way to load a WASM module and does not give you full control over everything, but it is the simplest option to get started.
-
-Other options:
- - todo:addressable loading
- - todo:manual loading
+[`SimpleWasmMonoBehaviour`](/docs/reference/code/simplewasmmonobehaviour.md) is not the only way to load a WASM module and does not give you full control over everything, but it is the simplest option to get started. Other options for loading WASM assets include:
+ - [Addressable Loading](./addressables.md) - Use the Unity [Addressable Asset System](https://docs.unity3d.com/Manual/com.unity.addressables.html) to load WASM modules.
+ - [Manual Loading](./../advanced/manual_loading.md) - Directly instantiate WASM modules in your own code.
 
 ## Tutorial
 
