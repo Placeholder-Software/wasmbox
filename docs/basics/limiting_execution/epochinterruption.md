@@ -18,7 +18,7 @@ Epoch Interruption is faster than fuel usage, but requires another thread to inc
 
 Epoch Interruption must be enabled in the [`EngineConfig`](../../reference/code/engineconfig.md) used to load a WASM Asset:
 
-```clike
+```csharp
 EngineConfig config = EngineConfig.Default;
 config.UseEpochInterruption = true;
 ```
@@ -35,7 +35,7 @@ If the WASM Asset is precompiled it must **also** be enabled in the [importer](.
 
 The Epoch limit is set on a [`Store`](../../reference/code/wasmtime/store.md), all [`Instances`](../../reference/code/wasmtime/instance.md) sharing a `Store` share the same epoch deadline.
 
-```clike
+```csharp
 Store store; // Get a store from somewhere
 
 store.SetEpochDeadline(100);
@@ -51,7 +51,7 @@ All WASM Instances loaded with the same [`EngineConfig`](../../reference/code/en
 
 :::
 
-```clike
+```csharp
 EngineConfig config = EngineConfig.Default;
 
 var handle = config.GetEpochGroup();
@@ -70,7 +70,7 @@ WASM function calls through the Wasmbox [generated wrapper code](../../reference
 
 <TabItem value="exceptions" label="Exception">
 
-```clike
+```csharp
 try
 {
     var value = wrapper.hello();
@@ -86,7 +86,7 @@ catch (TrapException ex)
 
 <TabItem value="result" label="Result">
 
-```clike
+```csharp
 var result = wrapper.hello();
 if (result.Type == ResultType.Ok)
 {

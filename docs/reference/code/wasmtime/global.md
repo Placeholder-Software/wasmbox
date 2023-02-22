@@ -12,7 +12,7 @@ The `Global` class is a wrapper around the [`wasmtime::Global` struct](https://d
 
 Attempts to create a strongly typed "wrapper" around this global. The type of the wrapper is checked when it is created and if the type is incompatible this method will return `null`. Using the wrapper to get and set values does not allocate.
 
-```clike title="Global Accessor"
+```csharp title="Global Accessor"
 var wrapper = global.Wrap<int>();
 int value = wrapper.GetValue();     // Returns `int`
 wrapper.SetValue(17);               // Accepts `int`

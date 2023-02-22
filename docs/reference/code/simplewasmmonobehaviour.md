@@ -71,7 +71,7 @@ This property will throw an `InvalidOperationException` if it is access when the
 
 Safe alternative to the [`Wrapper`](#twrapper-wrapper) property. Tries to get the wrapper and returns `null` if it is not currently valid.
 
-```clike
+```csharp
 void Update()
 {
     var wrapper = TryGetWrapper();
@@ -90,7 +90,7 @@ Some Unity events are used inside the `SimpleWasmMonoBehaviour`. If you use thes
 
 For example to use the `OnEnable` event:
 
-```clike
+```csharp
 protected override void OnEnable()
 {
     Debug.Log("Your code here!");

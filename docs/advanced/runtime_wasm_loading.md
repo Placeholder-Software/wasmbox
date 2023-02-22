@@ -19,7 +19,7 @@ A [`DynamicWasmAsset`](./../reference/code/dynamicwasmasset.md) can be loaded fr
 
 <TabItem value="memory" label="In Memory (Byte Array)">
 
-```clike title="Loading WASM from a byte array"
+```csharp title="Loading WASM from a byte array"
 byte[] some_wasm_bytes = GetWasmFromSomewhere();
 DynamicWasmAsset.FromWASM(some_wasm_bytes);
 ```
@@ -28,7 +28,7 @@ DynamicWasmAsset.FromWASM(some_wasm_bytes);
 
 <TabItem value="file" label="File">
 
-```clike title="Loading WASM from a file"
+```csharp title="Loading WASM from a file"
 string path = "path/to/some.wasm";
 DynamicWasmAsset.FromPathWASM(path);
 ```
@@ -45,7 +45,7 @@ A [`DynamicWasmAsset`](./../reference/code/dynamicwasmasset.md) can be loaded fr
 
 <TabItem value="memory" label="In Memory (string)">
 
-```clike title="Loading WAT from a string"
+```csharp title="Loading WAT from a string"
 string wat = "(module (memory 1) (func))";
 DynamicWasmAsset.FromWAT(wat);
 ```
@@ -54,7 +54,7 @@ DynamicWasmAsset.FromWAT(wat);
 
 <TabItem value="file" label="File">
 
-```clike title="Loading WAT from a file"
+```csharp title="Loading WAT from a file"
 string path = "path/to/some.wat";
 DynamicWasmAsset.FromPathWAT(path);
 ```

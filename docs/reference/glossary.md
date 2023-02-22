@@ -101,7 +101,7 @@ A WASM [`Instance`](../reference/code/wasmtime/instance.md) has no state (i.e. m
 
 By default WASM execution is completely "sandboxed", executing WASM code cannot access anything outside of the box. This makes it safe to run malicious code, and easy to ensure [determinism](../advanced/determinism.md). The [`Linker`](../reference/code/wasmtime/linker.md) allows you to expose certain C# methods to WASM code, allowing it to call those methods. For example [WASI](./../basics/wasi.md) features.
 
-```clike
+```csharp
 int Add(int a, int b)
 {
     return a + b;
@@ -115,7 +115,7 @@ linker.DefineFunction("myfunctions", "add", Add);
 
 An [`Instance`](../reference/code/wasmtime/instance.md) is the final step which allows you to call WASM code.
 
-```clike
+```csharp
 var add = instance.GetFunction<int, int, int>("Add");
 var result = add(1, 2);
 Debug.Assert(result == 3);
@@ -125,7 +125,7 @@ Debug.Assert(result == 3);
 
 An [`Instance`](../reference/code/wasmtime/instance.md) is a low level API that is often not very convenient to use directly. The Wasmbox editor importer can [generate code](../reference/editor/import.md#6-code-generation) which "wraps" an [`Instance`](../reference/code/wasmtime/instance.md) and makes it much more convenient (and efficient) to use.
 
-```clike
+```csharp
 using (var wrapper = new GeneratedWrapper(instance, store))
 {
     var result = wrapper.Add(1, 2);

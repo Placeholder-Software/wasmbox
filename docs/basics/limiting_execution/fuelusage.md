@@ -23,7 +23,7 @@ When the execution runs out of fuel it will cause a "Trap" which is returned to 
 <Tabs>
 <TabItem value="Exception" label="Exception" default>
 
-```clike
+```csharp
 // Add some fuel to the store
 store.AddFuel(42);
 
@@ -50,7 +50,7 @@ catch (TrapException ex)
 </TabItem>
 <TabItem value="Result" label="Result">
 
-```clike
+```csharp
 // Add some fuel to the store
 store.AddFuel(42);
 

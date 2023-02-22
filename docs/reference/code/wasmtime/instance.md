@@ -16,7 +16,7 @@ Try to get a [`Function`](./function.md) from this `Instance` with the given nam
 
 Try to get a [`Function`](./function.md) from this `Instance` with the given name which takes arguments `A`,`B`,`C` etc (up to 12 parameters) and returns `R`. If the function has multiple return types use a tuple as `R`.
 
-```clike
+```csharp
 // Get a function from WASM
 var func = instance.GetFunction<int, float, (float, int)>("demo_function");
 

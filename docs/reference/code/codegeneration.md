@@ -47,7 +47,7 @@ The function wrappers which are generated can indicate a trap in one of two ways
 
 If `Trap Handling` is set to `Throw Exception` then a WASM trap will be converted into a C# `TrapException` and thrown, this can be handled in the normal way in C# using `try/catch`.
 
-```clike title="Trap Exception"
+```csharp title="Trap Exception"
 try
 {
     var value = wrapper.hello();
@@ -63,7 +63,7 @@ catch (TrapException ex)
 
 If `Trap handling` is set to `Return Result` then every WASM function will return a result value which can be inspected to check if it represents a success or an error. This is faster than throwing an exception.
 
-```clike title="Trap Result"
+```csharp title="Trap Result"
 var result = wrapper.hello();
 if (result.Type == ResultType.Ok)
 {
@@ -80,7 +80,7 @@ else
 
 Every function exported from the WASM will be wrapped in a C# method with the same name. If the name contains invalid characters (e.g. `$wasm-function`) they will be replaced with underscores (e.g. `_wasm_function`).
 
-```clike title="Exported Function"
+```csharp title="Exported Function"
 var result = wrapper._wasm_function(1, 2, 3);
 ```
 
@@ -88,7 +88,7 @@ var result = wrapper._wasm_function(1, 2, 3);
 
 Every global variable exported from the WASM will be wrapped in a C# property with the same name which returns a [Global](./wasmtime/global.md) object. If the name contains invalid characters (e.g. `$the-global`) they will be replaced with underscores (e.g. `_the_global`). If the global is **immutable** the property will have a _getter_ but not a _setter_.
 
-```clike title="Exported Global"
+```csharp title="Exported Global"
 var result = wrapper._a_global;
 wrapper._a_global = result;
 ```
@@ -97,7 +97,7 @@ wrapper._a_global = result;
 
 Every memory region exported from the WASM will be wrapped in a C# property with the same name which returns a [`Memory`](./wasmtime/memory.md) object. If the name contains invalid characters (e.g. `/memory\`) they will be replaced with underscores (e.g. `_memory_`).
 
-```clike title="Exported Memory"
+```csharp title="Exported Memory"
 var integer = wrapper._memory_.ReadInt32(0);
 wrapper._memory_.WriteInt32(0, integer + 1);
 ```
@@ -106,6 +106,6 @@ wrapper._memory_.WriteInt32(0, integer + 1);
 
 Every table exported from the WASM will be wrapped in a C# property with the same name which returns a [`Table`](./wasmtime/table.md) object. If the name contains invalid characters (e.g. `this is a table`) they will be replaced with underscores (e.g. `this_is_a_table`).
 
-```clike title="Exported Table"
+```csharp title="Exported Table"
 var size = wrapper.this_is_a_table.GetSize();
 ```

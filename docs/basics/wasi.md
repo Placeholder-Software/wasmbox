@@ -28,7 +28,7 @@ WASM Assets which require a WASI function will show a `WASI` indicator next to t
 
 Random number generation is provided by an implementation of [`IVirtualRandomSource`](../reference/code/WASI/random.md).
 
-```clike
+```csharp
 var rng = new CryptoRandomSource();
 linker.Define(rng);
 ```
@@ -39,7 +39,7 @@ linker.Define(rng);
 
 Functions which would normally be associated with an OS "Process" are provided by an implementation of [`IVirtualProcess`](../reference/code/WASI/process.md).
 
-```clike
+```csharp
 var proc = new VirtualProcess(OnExit);
 linker.Define(proc);
 
@@ -55,7 +55,7 @@ void OnExit(uint code)
 
 Functions which provide access to the filesystem are provided by an implementation of [`IVirtualFileSystem`](../reference/code/WASI/filesystem.md). The default implementation provides an entire "virtual filesystem" which can have a mix of real files/folders with fully virtual files/folders which are stored in memory.
 
-```clike
+```csharp
 // Use a "VirtualFileSystemBuilder" to define a fake file system entirely in memory
 var builder = new VirtualFileSystemBuilder()
     .WithVirtualRoot(root => {
@@ -74,7 +74,7 @@ linker.Define(builder.Build());
 
 Functions which would normally be associated with an OS "Environment" are provided by an implementation of [`IVirtualEnvironment`](../reference/code/WASI/environment.md).
 
-```clike
+```csharp
 var env = new VirtualEnvironment()
     .PassthroughEnvironmentVariables()                      // Add all of the real environment variables
     .SetEnvironmentVariable("foo", "bar")                   // Create a variable named "foo" with value "bar"
@@ -89,7 +89,7 @@ linker.Define(env);
 
 Functions which get the current system time are provided by an implementation of [`IVirtualClock`](../reference/code/WASI/clock.md). A `RealtimeClock` provides access to the real system time (with an optional offset). A `ManualClock` provides access to a specific time which only advances when `clock.Tick()` is called.
 
-```clike
+```csharp
 var clock = new RealtimeClock();
 linker.Define(clock);
 ```

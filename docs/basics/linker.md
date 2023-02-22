@@ -27,7 +27,7 @@ To add things to a [`Linker`](/docs/reference/code/wasmtime/linker.md) simply _D
 
 A C# function/method can be defined:
 
-```clike
+```csharp
 // Lambda function
 linker.DefineFunction("module", "add", (int a, int b) => a + b);
 
@@ -43,7 +43,7 @@ static int Subtract(int a, int b)
 
 A WASI feature (such as a random number generator) can be defined:
 
-```clike
+```csharp
 var rng = new CryptoRandomSource();
 linker.Define(rng);
 ```
@@ -52,7 +52,7 @@ linker.Define(rng);
 
 An `Instance` can be defined, to add all of it's _exports_ for other WASM code to call:
 
-```clike
+```csharp
 Instance instance;
 Linker linker;
 linker.DefineInstance(store, "the_name", instance);
@@ -66,7 +66,7 @@ This is an advanced use case which requires manually loading and instantiating m
 
 ### Defining A Module
 
-```clike
+```csharp
 Module module;
 Linker linker;
 linker.DefineModule(store, module);

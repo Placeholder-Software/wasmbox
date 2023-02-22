@@ -9,7 +9,7 @@ The wrapper code which Wasmbox automatically generates is designed to work withi
 
 Create a new `IJob` struct:
 
-```clike
+```csharp
 public struct DemoJob
     : IJob
 {
@@ -31,7 +31,7 @@ public struct DemoJob
 
 Schedule the Job with the Unity safety system. Once the Job has completed call `handle.Complete()` to be able to use the wrapper in the main thread again.
 
-```clike
+```csharp
 var handle = new DemoJob(the_wrapper).Schedule();
 
 // Wait a while
@@ -59,7 +59,7 @@ To setup epoch interruption:
 
 By using the [`Linker`](./../reference/code/wasmtime/linker.md) it is easy to accidentally bypass the safety system through WASM code. For example this code keeps a counter in a non-threadsafe way:
 
-```clike
+```csharp
 int counter = 1;
 
 linker.DefineFunction("this_is_bad", "accumulate_not_threadsafe", (int a) => {
@@ -76,7 +76,7 @@ If you are going to schedule WASM code to run in jobs everything defined in the 
 
 A simple modification to the above code which makes it threadsafe is to add a lock:
 
-```clike
+```csharp
 var safety = new object();
 int counter = 1;
 

@@ -126,7 +126,10 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        defaultLanguage: "clike",
+        defaultLanguage: "csharp",
+        additionalLanguages: [
+          "powershell", "csharp", "cpp", "c", "zig", "rust", "wasm", "json", "lisp"
+        ]
       },
       colorMode: {
         respectPrefersColorScheme: true,

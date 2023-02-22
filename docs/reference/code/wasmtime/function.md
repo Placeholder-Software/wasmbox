@@ -34,7 +34,7 @@ Get a "null" function reference.
 
 Check if the given match the Results/Parameters of this `Function`. This can be used as a type check before calling `Invoke`.
 
-```clike
+```csharp
 // func.Results == [ ValueKind.Float32 ]
 // func.Parameters == [ ValueKind.Int32, ValueKind.Int64 ]
 
@@ -71,7 +71,7 @@ A wrapper cannot be created if the types do not match the signature of the `Func
 
 :::
 
-```clike
+```csharp
 Function func = some_func;
 
 // Try to wrap the function as an "Action" which accepts an int.
