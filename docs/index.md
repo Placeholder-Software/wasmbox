@@ -1,7 +1,7 @@
 ---
 slug: '/'
 sidebar_position: 0
-title: Wasm Box
+title: Wasmbox
 ---
 
 todo:asset overview
