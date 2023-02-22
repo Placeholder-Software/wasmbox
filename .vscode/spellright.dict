@@ -18,3 +18,5 @@ externref
 wasi
 img
 Fermyon
+Emscripten
+libc

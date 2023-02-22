@@ -31,8 +31,6 @@ export function fibonacci(n: i32): i32 {
  - Not a well known language.
  - No large/established set of libraries to use.
 
-https://github.com/AssemblyScript/wasi-shim
-
 ## Resources
  - [Homepage](https://www.assemblyscript.org/)
  - [Documentation](https://www.assemblyscript.org/introduction.html)

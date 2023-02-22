@@ -2,13 +2,33 @@
 title: C/C++
 ---
 
-todo:C++ compile
+C and C++ are two of the most well known and widely used languages in the world.
 
- - [C](https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm) (emscripten?)
- - [C++](https://developer.mozilla.org/en-US/docs/WebAssembly/existing_C_to_wasm) (emscripten?)
+```clike
+#include <stdio.h>
 
- ### C & C++
+static int the_meaning = 42;
 
-C and C++ are among the most common languages to compile to WASM. The huge amount of existing libraries written in C & C++ can be compiled to WASM, providing protection against memory unsafety and removing the need to compile them to every platform your application is targeting.
- - [MDN C to WASM Tutorial](https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm)
- - [Fermyon Tutorial](https://www.fermyon.com/wasm-languages/c-lang)
+int main() 
+{
+    printf("The mean of life is: %d", the_meaning);
+}
+```
+
+## Advantages
+
+ - todo
+
+## Drawbacks
+
+ - todo
+
+
+## Resources
+ - [Homepage](https://cplusplus.com/)
+ - [Documentation](https://cplusplus.com/reference/)
+ - [WASI SDK](https://github.com/WebAssembly/wasi-sdk)
+ - [WASI libc](https://github.com/WebAssembly/wasi-libc)
+ - [Compiler Playground](https://godbolt.org/z/r43W3jGnz)
+ - [Emscripten](https://emscripten.org/index.html)
+ - [MDN Emscripten Guide](https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm)
