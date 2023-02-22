@@ -104,7 +104,7 @@ const config = {
               },
               {
                 label: 'Email',
-                href: 'mailto://admin@placeholder-software.co.uk',
+                href: 'mailto:admin@placeholder-software.co.uk',
               },
             ],
           },
