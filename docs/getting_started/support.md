@@ -3,8 +3,6 @@ title: Help & Support
 sidebar_position: 4
 ---
 
-import DiscordSvg from '/static/img/discord-icon.svg';
-
 ## Bug Report 🐛
 
 If you find a bug in Wasmbox please open an issue on the [Issue Tracker](https://github.com/Placeholder-Software/wasmbox/issues). There is a template for bug reports, please fill it out in detail.
@@ -19,7 +17,7 @@ If you find a simple problem in the documentation such as spelling or grammar yo
 
 For more complex problems (e.g. missing or unclear documentation) please open an issue on the [Issue Tracker](https://github.com/Placeholder-Software/wasmbox/issues).
 
-## Discord <DiscordSvg style={{width:"1em"}} />
+## Discord 💬
 
 The [Placeholder Software Discord Server](https://discord.gg/3RtDa2M9Bx) is also available for support. Feel free to join the server and discuss bugs, features requests or to discuss the best way to achieve something with Wasmbox.
 
