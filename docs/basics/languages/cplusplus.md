@@ -16,12 +16,13 @@ int main()
 ```
 
 ## Advantages
-
- - todo
+ - Huge ecosystem is existing code, much of which can be compiled for WASM
+ - Small binary sizes
+ - Great performance
 
 ## Drawbacks
-
- - todo
+ - C++ exceptions and threads are not yet supported
+ - Not all libraries can be compiled for WASM
 
 
 ## Resources

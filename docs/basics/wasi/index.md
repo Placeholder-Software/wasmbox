@@ -12,7 +12,7 @@ WASI provides _controlled_ access to certain system resources. For example the v
 
 :::caution
 
-WASM execution is normally completely [deterministic](../advanced/determinism.md). Adding WASI features can easily break this, since it provides access to external resources which are not deterministic.
+WASM execution is normally completely [deterministic](../../advanced/determinism.md). Adding WASI features can easily break this, since it provides access to external resources which are not deterministic.
 
 :::
 
@@ -20,13 +20,13 @@ WASM execution is normally completely [deterministic](../advanced/determinism.md
 
 WASM Assets which require a WASI function will show a `WASI` indicator next to the function. Hovering over the indicator will show which WASI feature is required to supply this import, clicking the indicator will bring you to this this documentation page. All WASI features are interfaces which you may implement yourself, or you can use one of the built in implementations.
 
-![WASI Import](../../static/img/InspectorWasi.png)
+![WASI Import](/img/InspectorWasi.png)
 
 <Tabs queryString="feature-name">
 
 <TabItem value="ivirtualrandomsource" label="Random Numbers">
 
-Random number generation is provided by an implementation of [`IVirtualRandomSource`](../reference/code/WASI/random.md).
+Random number generation is provided by an implementation of [`IVirtualRandomSource`](../../reference/code/WASI/random.md).
 
 ```csharp
 var rng = new CryptoRandomSource();
@@ -37,7 +37,7 @@ linker.Define(rng);
 
 <TabItem value="ivirtualprocess" label="Process">
 
-Functions which would normally be associated with an OS "Process" are provided by an implementation of [`IVirtualProcess`](../reference/code/WASI/process.md).
+Functions which would normally be associated with an OS "Process" are provided by an implementation of [`IVirtualProcess`](../../reference/code/WASI/process.md).
 
 ```csharp
 var proc = new VirtualProcess(OnExit);
@@ -53,7 +53,7 @@ void OnExit(uint code)
 
 <TabItem value="ivirtualfilesystem" label="File System">
 
-Functions which provide access to the filesystem are provided by an implementation of [`IVirtualFileSystem`](../reference/code/WASI/filesystem.md). The default implementation provides an entire "virtual filesystem" which can have a mix of real files/folders with fully virtual files/folders which are stored in memory.
+Functions which provide access to the filesystem are provided by an implementation of [`IVirtualFileSystem`](../../reference/code/WASI/filesystem.md). The default implementation provides an entire "virtual filesystem" which can have a mix of real files/folders with fully virtual files/folders which are stored in memory.
 
 ```csharp
 // Use a "VirtualFileSystemBuilder" to define a fake file system entirely in memory
@@ -72,7 +72,7 @@ linker.Define(builder.Build());
 
 <TabItem value="ivirtualenvironment" label="Environment">
 
-Functions which would normally be associated with an OS "Environment" are provided by an implementation of [`IVirtualEnvironment`](../reference/code/WASI/environment.md).
+Functions which would normally be associated with an OS "Environment" are provided by an implementation of [`IVirtualEnvironment`](../../reference/code/WASI/environment.md).
 
 ```csharp
 var env = new VirtualEnvironment()
@@ -87,7 +87,7 @@ linker.Define(env);
 
 <TabItem value="ivirtualclock" label="Clock">
 
-Functions which get the current system time are provided by an implementation of [`IVirtualClock`](../reference/code/WASI/clock.md). A `RealtimeClock` provides access to the real system time (with an optional offset). A `ManualClock` provides access to a specific time which only advances when `clock.Tick()` is called.
+Functions which get the current system time are provided by an implementation of [`IVirtualClock`](../../reference/code/WASI/clock.md). A `RealtimeClock` provides access to the real system time (with an optional offset). A `ManualClock` provides access to a specific time which only advances when `clock.Tick()` is called.
 
 ```csharp
 var clock = new RealtimeClock();

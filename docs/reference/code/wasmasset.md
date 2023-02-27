@@ -9,7 +9,11 @@ It is also possible to load a WASM module at runtime from a `byte[]` or `string`
 
 ## Instantiating A WASM Asset
 
-todo:Instantiating A WASM Asset
+A WASM Asset must be loaded into memory and then instantiated to run WASM code. There are several ways to do this:
+
+ - [SimpleWasmMonoBehaviour](./simplewasmmonobehaviour.md): handles the entire process inside a standard `MonoBehaviour` wrapper.
+ - [AddressableWasmMonoBehaviour](todo): Similar to the [SimpleWasmMonoBehaviour](./simplewasmmonobehaviour.md), but uses [Addressables](https://docs.unity3d.com/Manual/com.unity.addressables.html) to reference the WASM asset.
+ - [Manual Loading](./../../advanced/manual_loading.md): do the entire process in your own code, giving you complete control.
 
 ## Properties
 
