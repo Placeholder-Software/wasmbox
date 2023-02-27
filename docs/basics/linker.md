@@ -80,4 +80,4 @@ This is an advanced use case which requires manually loading modules! [Read more
 
 ## WASI
 
-WASI is the **WebAssembly System Interface**. WASI is an API specification that provides access to several operating-system-like features such as filesystems, clocks, and random numbers which can all be added to the [`Linker`](/docs/reference/code/wasmtime/linker.md) for WASM code to call directly. Read more about using WASI [**here**](./wasi.md).
+WASI is the **WebAssembly System Interface**. WASI is an API specification that provides access to several operating-system-like features such as filesystems, clocks, and random numbers which can all be added to the [`Linker`](/docs/reference/code/wasmtime/linker.md) for WASM code to call directly. Read more about using WASI [**here**](/docs/basics/wasi/index.md).

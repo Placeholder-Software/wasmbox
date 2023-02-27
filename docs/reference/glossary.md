@@ -99,7 +99,7 @@ A WASM [`Instance`](../reference/code/wasmtime/instance.md) has no state (i.e. m
 
 ### Linker
 
-By default WASM execution is completely "sandboxed", executing WASM code cannot access anything outside of the box. This makes it safe to run malicious code, and easy to ensure [determinism](../advanced/determinism.md). The [`Linker`](../reference/code/wasmtime/linker.md) allows you to expose certain C# methods to WASM code, allowing it to call those methods. For example [WASI](./../basics/wasi.md) features.
+By default WASM execution is completely "sandboxed", executing WASM code cannot access anything outside of the box. This makes it safe to run malicious code, and easy to ensure [determinism](../advanced/determinism.md). The [`Linker`](../reference/code/wasmtime/linker.md) allows you to expose certain C# methods to WASM code, allowing it to call those methods. For example [WASI](/docs/basics/wasi/index.md) features.
 
 ```csharp
 int Add(int a, int b)

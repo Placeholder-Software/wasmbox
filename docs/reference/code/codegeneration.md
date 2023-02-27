@@ -21,7 +21,7 @@ For more information see [this tutorial](../../basics/jobs.md) on multithreaded 
 
 ## WebAssembly System Interface (WASI)
 
-WebAssembly System Interface ([WASI](../../basics/wasi.md)) is a set of APIs which allow access to system resources (such as the filesystem) in a tightly controlled way. If a WASM asset imports any functions which are part of the WASI spec they will be marked in the inspector:
+WebAssembly System Interface ([WASI](/docs/basics/wasi/index.md)) is a set of APIs which allow access to system resources (such as the filesystem) in a tightly controlled way. If a WASM asset imports any functions which are part of the WASI spec they will be marked in the inspector:
 
 ![WASI Import](../../../static/img/InspectorWasi.png)
 
