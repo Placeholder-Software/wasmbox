@@ -1,11 +1,12 @@
 ---
 title: Runtime WASM Loading
+sidebar_position: 2
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The basic use of Wasmbox has a WASM/WAT file [imported](../reference/editor/import.md in the editor, to produce a [WasmAsset](../reference/code/wasmasset.md) which can be loaded at runtime. However sometimes it is necessary to load a WASM file at runtime, for example loading mods from a folder. This can be done with the [`DynamicWasmAsset`](./../reference/code/dynamicwasmasset.md) or a custom [`IWasmAsset`](./../reference/code/iwasmasset.md).
+The basic use of Wasmbox has a WASM/WAT file [imported](../reference/editor/import.md) in the editor, to produce a [WasmAsset](../reference/code/wasmasset.md) which can be loaded at runtime. However sometimes it is necessary to load a WASM file at runtime, for example loading mods from a folder. This can be done with the [`DynamicWasmAsset`](./../reference/code/dynamicwasmasset.md) or a custom [`IWasmAsset`](./../reference/code/iwasmasset.md).
 
 ## Dynamic Wasm Asset
 
