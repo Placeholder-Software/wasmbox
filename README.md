@@ -1,5 +1,3 @@
 # Wasmbox
 
-A [WebAssembly](https://webassembly.org/) runtime for Unity. Coming Soon!
-
-todo: insert store link here when it's released.
+Wasmbox is an easy to use A [WebAssembly](https://webassembly.org/) runtime for Unity. Find out more [here](https://placeholder-software.github.io/wasmbox/).

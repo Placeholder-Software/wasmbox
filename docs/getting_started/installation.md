@@ -3,7 +3,9 @@ title: Installation
 sidebar_position: 3
 ---
 
-1. Purchase Wasmbox on the [Unity Asset Store](todo:link_asset_store).
+import * as links from "@site/src/components/links.js"
+
+1. Purchase Wasmbox on the <links.AssetStore />.
 1. Open the package manager (Window > Package Manager).
 2. Switch to `My Assets`.
 3. Find `Wasmbox` in the list of assets.
