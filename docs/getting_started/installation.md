@@ -35,12 +35,14 @@ To use addressable loading:
 1. Install `Addressables` 1.19 or greater.
 2. Tick `Addressable Loading` when [importing](../reference/editor/import.md#6-code-generation) a WASM Asset.
 
-todo: addressables installation needs to reference:
-  - Unity.ResourceManager
-  - Unity.Addressables
+:::caution
+
+If asset is inside an [assembly definition](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) you must reference `Unity.ResourceManager` and `Unity.Addressables`.
+
+:::
 
 :::tip
 
-[Wasmbox Addressables tutorial](../basics/addressables.md).
+Wasmbox [addressables loading tutorial](../basics/addressables.md).
 
 :::

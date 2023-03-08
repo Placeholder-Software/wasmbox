@@ -1,5 +1,6 @@
 ---
 title: Determinism
+sidebar_position: 1
 ---
 
 WebAssembly (WASM) is deterministic in that it guarantees that the execution of a given module with the same input values will always produce the same output values, regardless of the platform or implementation used to run the module. This means that the execution of a WebAssembly module is predictable and reproducible. 
