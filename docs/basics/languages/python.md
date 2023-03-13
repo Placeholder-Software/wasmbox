@@ -24,3 +24,4 @@ def hi():
  - [Documentation](https://docs.python.org/3/)
  - [python-wasi](https://github.com/singlestore-labs/python-wasi)
  - [Fermyon](https://www.fermyon.com/wasm-languages/python)
+ - [wagi-python](https://github.com/fermyon/wagi-python)

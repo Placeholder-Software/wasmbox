@@ -11,3 +11,7 @@ export const IssueTracker = ({children}) => (
 export const AssetStore = ({children}) => (
     <a href="todo:link-asset-store">{children ?? "Unity Asset Store"}</a>
 );
+
+export const Email = ({children}) => (
+    <a href="mailto:admin@placeholder-software.co.uk">{children ?? "admin@placeholder-software.co.uk"}</a>
+)

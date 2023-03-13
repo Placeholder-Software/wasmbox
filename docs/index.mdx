@@ -6,8 +6,28 @@ title: Wasmbox
 
 import * as links from "@site/src/components/links.js"
 
-todo:asset overview
+**Wasmbox** is full [WebAssembly](https://webassembly.org/) runtime for Unity, based on [Wasmtime](https://wasmtime.dev/). WebAssembly (WASM) makes it possible to execute compiled code (e.g. C, C++ or Rust) in a safe and secure sandbox - providing high **performance**, **safe execution** of malicious/buggy code, cross platform **portability** and **deterministic** execution.
 
-<links.AssetStore />
-<links.Discord />
-<links.IssueTracker />
+Why would you want this? How about:
+ - Executing mods in a safe sandbox.
+ - Sharing mods between users without any security concerns.
+ - Running a plugin written in a non-C# language (e.g. Rust) on multiple platforms without recompiling.
+ - Adding user scripting by running an entire language runtime (e.g. Python) in a "virtual" machine.
+ - Executing game code in a totally deterministic runtime for easy lockstep multiplayer.
+
+### How Fast Is It?
+
+WebAssembly is designed for **near native** performance. [Benchmarks](https://programming-language-benchmarks.vercel.app/wasm-vs-csharp) show Wasmtime achieves approximately the same performance as C# - usually faster than Mono (Unity) and usually slower than the latest modern runtime (e.g. dotnet 7.0). Wasmbox squeezes out the maximum performance by automatically optimising, precompiling and compressing WASM as part of the asset importing process.
+
+### How Safe Is It?
+
+All WebAssembly code is executed in a completely memory-safe sandboxed environment - by default **nothing** is accessible to code running inside the sandbox. Creating new sandboxes is fast and easy, allowing multiple different bits of WASM code to be sandboxed from each other. Additional resources _can_ be made available inside the sandbox if necessary - this can be as simple as a single C# method that can be called from inside the sandbox, or it can be as complex as an entire virtual filesystem.
+
+### How Easy Is It?
+
+WebAssembly files (WASM/WAT format) are imported through the standard Unity asset pipeline. Automatic code generation writes much of the complex "interop" code. This includes support for the Unity [Job/Safety System](https://docs.unity3d.com/Manual/JobSystem.html), allowing WASM code to be executed off the main thread. Wasmbox includes a `MonoBehaviour` based script which handles all of the complex work of loading and invoking WASM for you.
+
+## How Can I Buy It?
+
+<b>Buy Wasmbox from the <links.AssetStore />!</b>
+

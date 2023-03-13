@@ -3,6 +3,8 @@ title: Help & Support
 sidebar_position: 4
 ---
 
+import * as links from "@site/src/components/links.js"
+
 ## Documentation
 
  - [Getting Started](./index.md) category provide a basic introduction to WASM concepts and an overview of Wasmbox.
@@ -12,22 +14,20 @@ sidebar_position: 4
 
 ## Documentation Error 📚
 
-If you find a simple problem in the documentation such as spelling or grammar you can directly edit the page to fix the problem by clicking the `Edit This Page` link at the bottom of every page.
-
-For more complex problems (e.g. missing or unclear documentation) please open an issue on the [Issue Tracker](https://github.com/Placeholder-Software/wasmbox/issues).
+If you find a simple problem in the documentation such as spelling or grammar you can directly edit the page to fix the problem by clicking the `Edit This Page` link at the bottom of every page. For more complex problems (e.g. missing or unclear documentation) please open an issue on the <links.IssueTracker />.
 
 ## Bug Report 🐛
 
-If you find a bug in Wasmbox please open an issue on the [Issue Tracker](https://github.com/Placeholder-Software/wasmbox/issues). There is a template for bug reports, please fill it out in detail.
+If you find a bug in Wasmbox please open an issue on the <links.IssueTracker />. There is a template for bug reports, please fill it out in detail.
 
 ## Feature Request 🚀
 
-If you cannot achieve something with Wasmbox please open an issue on the [Issue Tracker](https://github.com/Placeholder-Software/wasmbox/issues). There is a template for feature requests, please fill it out in detail.
+If you cannot achieve something with Wasmbox please open an issue on the <links.IssueTracker />. There is a template for feature requests, please fill it out in detail.
 
 ## Discord 💬
 
-The [Placeholder Software Discord Server](https://discord.gg/3RtDa2M9Bx) is also available for support. Feel free to join the server and discuss bugs, features requests or to discuss the best way to achieve something with Wasmbox.
+The <links.Discord>Placeholder Software Discord Server</links.Discord> is also available for support. Feel free to join the server and discuss bugs, features requests or to discuss the best way to achieve something with Wasmbox.
 
 ## Email ✉️
 
-If you have something confidential you want to discuss (or you just don't like Discord!) you can contact us by email at [admin@placeholder-software.co.uk](mailto:admin@placeholder-software.co.uk).
+If you have something confidential you want to discuss (or you just don't like Discord!) you can contact us by email at <links.Email />.
