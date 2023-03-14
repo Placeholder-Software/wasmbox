@@ -20,6 +20,12 @@ All WASM code is executed within the context of a [`Store`](/docs/reference/code
 
 When the execution runs out of fuel it will cause a "Trap" which is returned to the caller. A trap is either returned as an exception or a result, this can be configured in the [code generation settings](/docs/reference/editor/import.md#6-code-generation) when importing a WASM asset.
 
+:::tip
+
+How to get access to the `Store` depends on which technique you used to load the WASM. For example in the `SimpleWasmMonoBehaviour` you can just use `base.Store`
+
+:::
+
 <Tabs>
 <TabItem value="Exception" label="Exception" default>
 

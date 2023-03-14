@@ -26,7 +26,7 @@ flowchart TD;
             --> ConfigLinker[/"ConfigureLinker"/]
             --> LoadingModule("Loading Module")
             --> OnLoadingWait[/"OnLoadingWait"/]
-            --> OnCreatedWrapper[/"OnCreatedWrapper"/]
+            --> OnWrapperCreated[/"OnWrapperCreated"/]
 
         OnLoadingWait --> OnLoadingWait
         OnLoadingWait --x OnLoadingFailed[/"OnLoadingFailed"/]
@@ -63,7 +63,7 @@ The [`EngineConfig`](./engineconfig.md) determines which `Engine` will be used t
 
 Get the "wrapper" code which has been created. WASM code can be invoked through this.
 
-This property will throw an `InvalidOperationException` if it is access when the wrapper is not valid. The wrapper is only valid after `OnCreatedWrapper` has been called and before `OnDisable` has been called.
+This property will throw an `InvalidOperationException` if it is access when the wrapper is not valid. The wrapper is only valid after `OnWrapperCreated` has been called and before `OnDisable` has been called.
 
 ## Methods
 
@@ -124,6 +124,6 @@ Call `loading.Wait()` to wait for the task to complete. This will **freeze the m
 
 This method will be called every time a new `Engine` has been chosen (because the [EngineConfig](#engineconfig-engineconfig) has changed). If [Epoch Interruption](./../../basics/limiting_execution/epochinterruption.md) is enabled the `epochs` object will be non-null, use it to set the epoch for this engine.
 
-### `void OnCreatedWrapper(TWrapper wrapper)`
+### `void OnWrapperCreated(TWrapper wrapper)`
 
 This method will be called when a new wrapper is created, it is the very last part of the loading coroutine.
