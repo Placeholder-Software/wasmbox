@@ -6,7 +6,7 @@ title: Wasmbox
 
 import * as links from "@site/src/components/links.js"
 
-**Wasmbox** is full [WebAssembly](https://webassembly.org/) runtime for Unity, based on [Wasmtime](https://wasmtime.dev/). WebAssembly (WASM) makes it possible to execute compiled code (e.g. C, C++ or Rust) in a safe and secure sandbox - providing high **performance**, **safe execution** of malicious/buggy code, cross platform **portability** and **deterministic** execution.
+**Wasmbox** is full [WebAssembly](https://webassembly.org/) runtime for Unity, based on [Wasmtime](https://wasmtime.dev/). WebAssembly (WASM) makes it possible to execute compiled code (e.g. C, C++ or Rust) in a safe and secure sandbox - providing high **performance**, **safe execution** of potentially untrusted code, cross platform **portability** and **deterministic** execution.
 
 Why would you want this? How about:
  - Executing mods in a safe sandbox.
@@ -25,9 +25,9 @@ All WebAssembly code is executed in a completely memory-safe sandboxed environme
 
 ### How Easy Is It?
 
-WebAssembly files (WASM/WAT format) are imported through the standard Unity asset pipeline. Automatic code generation writes much of the complex "interop" code. This includes support for the Unity [Job/Safety System](https://docs.unity3d.com/Manual/JobSystem.html), allowing WASM code to be executed off the main thread. Wasmbox includes a `MonoBehaviour` based script which handles all of the complex work of loading and invoking WASM for you.
+WebAssembly files (WASM/WAT format) are imported through the standard Unity asset pipeline. Just drop them into your Assets folder, and Wasmbox will bring them into your project and automatically generate a C# wrapper for your WASM module. This includes support for the Unity [Job/Safety System](https://docs.unity3d.com/Manual/JobSystem.html), allowing WASM code to be executed off the main thread. Wasmbox includes a `MonoBehaviour` based script which handles all of the complex work of loading and invoking WASM for you.
 
-## How Can I Buy It?
+## Where Can I Get It?
 
 <b>Buy Wasmbox from the <links.AssetStore />!</b>
 

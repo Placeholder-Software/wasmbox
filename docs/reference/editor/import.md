@@ -59,9 +59,7 @@ Binaryen does not support all WASM features and not all modules can be optimized
 
 ## 4. Compilation
 
-If `Compilation` is ticked the WASM will be pre-compiled into native machine code for all active platforms. This increases the asset size (often by a factor of 10x or more) but can reduce loading times at runtime.
-
-If compilation is **disabled** WASM will be stored in a "Universal" format and compiled at when loaded. If compiled code cannot be loaded for some reason (e.g. incompatible architecture) the runtime loading will fall back to using the universal version.
+If `Compilation` is ticked the WASM will be pre-compiled into native machine code for all active platforms. This increases the asset size (often by a factor of 10x or more) but can reduce loading times at runtime. If compiled code cannot be loaded for some reason (e.g. incompatible architecture, pre-compilation is not enabled) the runtime loading will fall back to using the "Universal" version.
 
 :::tip Inspector Options
 

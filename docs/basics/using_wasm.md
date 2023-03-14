@@ -98,7 +98,7 @@ protected override void ConfigureLinker(Linker linker)
     linker.DefineFunction("module", "add", (int a, int b) => a + b);
 
     // Add a WASI random number generation
-    linker.Add(new CryptoRandomSource());
+    linker.Define(new CryptoRandomSource());
 
     base.ConfigureLinker(linker);
 }

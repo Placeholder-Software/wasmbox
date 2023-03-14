@@ -6,7 +6,7 @@ title: SimpleWasmMonoBehaviour
 
 ## Life Cycle
 
-`SimpleWasmMonoBehaviour` handles loading an asset and instantiating it (`OnEnable`), creating a Linker & Store (`Awake`), and destroying everything (`OnDestroy`). Refer to the Unity ["Order of execution for event functions"](https://docs.unity3d.com/Manual/ExecutionOrder.html) documentation for the exact order of these events. As the `SimpleWasmMonoBehaviour` is creating and destroying various WASM components there are _callbacks_ (shown in diamonds) which your code can use to track what is being done.
+`SimpleWasmMonoBehaviour` handles loading an asset and instantiating it (`OnEnable`), creating a Linker & Store (`Awake`), and destroying everything (`OnDestroy`). Refer to the Unity ["Order of execution for event functions"](https://docs.unity3d.com/Manual/ExecutionOrder.html) documentation for the exact order of these events. As the `SimpleWasmMonoBehaviour` is creating and destroying various WASM components, there are _callbacks_ (shown in diamonds) which your code can use to track what is being done.
 
 ```mermaid
 flowchart TD;
@@ -53,7 +53,7 @@ flowchart TD;
 
 ### `IWasmAsset? WasmAsset`
 
-Get or set the [`IWasmAsset`](./iwasmasset.md) which this behaviour will create. When this is set the asset will **not** immediately be reloaded, it is loaded in the "Loading Coroutine" which is started in `OnEnable`.
+Get or set the [`IWasmAsset`](./iwasmasset.md) which this behaviour will create. When this is set, the asset will **not** immediately be reloaded; it is loaded in the "Loading Coroutine", which is started in `OnEnable`.
 
 ### `EngineConfig EngineConfig`
 
@@ -61,7 +61,7 @@ The [`EngineConfig`](./engineconfig.md) determines which `Engine` will be used t
 
 ### `TWrapper Wrapper`
 
-Get the "wrapper" code which has been created, WASM code can be invoked through this.
+Get the "wrapper" code which has been created. WASM code can be invoked through this.
 
 This property will throw an `InvalidOperationException` if it is access when the wrapper is not valid. The wrapper is only valid after `OnCreatedWrapper` has been called and before `OnDisable` has been called.
 

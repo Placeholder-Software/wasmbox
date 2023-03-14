@@ -3,22 +3,26 @@ title: Platform Support
 sidebar_position: 2
 ---
 
-Wasmbox is built using the [Wasmtime](https://wasmtime.dev/) WebAssembly engine. Wasmbox supported platforms are derived from Wasmtime [supported platforms](https://docs.wasmtime.dev/stability-tiers.html).
+import * as links from "@site/src/components/links.js"
+
+Wasmbox is built using the [Wasmtime](https://wasmtime.dev/) WebAssembly engine. Wasmbox supported platforms are derived from the Wasmtime [supported platforms](https://docs.wasmtime.dev/stability-tiers.html) policy.
 
 ## Editor Platforms
 
-| Unity Platform  | Wasmtime Platform          | Support Tier |
+All editor features of Wasmbox should work in any of the platforms listed here. If you encounter an issue on any of these platforms please <links.IssueTracker>open an issue</links.IssueTracker>!
+
+| Unity Platform  | Wasmtime Platform          | [Wasmtime Support Tier](https://docs.wasmtime.dev/stability-tiers.html) |
 |-----------------|----------------------------|--------------|
 | Windows         | `x86_64-pc-windows-msvc`   | Tier 1       |
 | Linux           | `x86_64-unknown-linux-gnu` | Tier 1       |
 | MacOS           | `x86_64-apple-darwin`      | Tier 1       |
 | MacOS ARM       | `aarch64-apple-darwin`     | Tier 3       |
 
-All features of Wasmbox should work in any of the platforms listed here. If you encounter an issue on any of these platforms please [open an issue](https://github.com/Placeholder-Software/wasmbox/issues)!
-
 ## Player Platforms
 
-| Unity Platform  | Wasmtime Platform          | Support Tier |
+All runtime features of Wasmbox should work in any of the platforms listed here. If you encounter an issue on any of these platforms please <links.IssueTracker>open an issue</links.IssueTracker>!
+
+| Unity Platform  | Wasmtime Platform          | [Wasmtime Support Tier](https://docs.wasmtime.dev/stability-tiers.html) |
 |-----------------|----------------------------|--------------|
 | Windows         | `x86_64-pc-windows-msvc`   | Tier 1       |
 | Windows ARM     | `aarch64-pc-windows-msvc`  | Tier 3       |
@@ -28,8 +32,6 @@ All features of Wasmbox should work in any of the platforms listed here. If you 
 | MacOS           | `x86_64-apple-darwin`      | Tier 1       |
 | MacOS ARM       | `aarch64-apple-darwin`     | Tier 3       |
 | iOS             | **Unsupported**            | **None**     |
-
-All features of Wasmbox should work in any of the platforms listed here. If you encounter an issue on any of these platforms please [open an issue](https://github.com/Placeholder-Software/wasmbox/issues)!
 
 ## Stability
 

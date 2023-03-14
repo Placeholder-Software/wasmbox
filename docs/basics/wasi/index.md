@@ -6,7 +6,7 @@ sidebar_position: 3
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-WASI stands for **WebAssembly System Interface**. It's a spec that provides access to several operating-system-like features such as filesystems, clocks, and random numbers. Wasmbox provides implementations of most WASI functions (see `Assets\Plugins\PlaceholderSoftware\Wasmbox\Core\WASI\`).
+WASI, or **WebAssembly System Interface**, is an API specification that provides access to several operating-system-like features such as filesystems, clocks, and random numbers. Wasmbox provides implementations of most WASI functions (see `Assets\Plugins\PlaceholderSoftware\Wasmbox\Core\WASI\`).
 
 WASI provides _controlled_ access to certain system resources. For example the virtual file system implemented by Wasmbox can provide in-memory files (which are never saved) as well as expose _parts_ of the real file system, allowing you to carefully control exactly what can and cannot be accessed through WASM code. These features can allow untrusted or malicious code to be run safely.
 

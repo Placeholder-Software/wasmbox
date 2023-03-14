@@ -1,5 +1,5 @@
 ---
-title: WASM Calling C#
+title: Calling C# Code From WASM
 sidebar_position: 2
 ---
 
