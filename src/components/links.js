@@ -9,7 +9,7 @@ export const IssueTracker = ({children}) => (
 );
 
 export const AssetStore = ({children}) => (
-    <a href="todo:link-asset-store">{children ?? "Unity Asset Store"}</a>
+    <a href="https://assetstore.unity.com/packages/slug/248818?aid=1100lJDF">{children ?? "Unity Asset Store"}</a>
 );
 
 export const Email = ({children}) => (
