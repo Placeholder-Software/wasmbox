@@ -1,0 +1,30 @@
+---
+title: C#
+---
+
+C# is a language you will know well if you're using Unity!
+
+```csharp
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Hello World");
+	}
+}
+```
+
+## Advantages
+ - Huge ecosystem is existing code
+ - Same language as Unity
+ - Great performance
+
+## Drawbacks
+ - Not all libraries can be compiled for WASM
+ - Large `.wasm` files
+
+## Resources
+ - [Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/)
+ - [dotnet WASI SDK](https://github.com/dotnet/dotnet-wasi-sdk)
