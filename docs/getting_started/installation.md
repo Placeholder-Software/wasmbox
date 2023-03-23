@@ -5,9 +5,17 @@ sidebar_position: 3
 
 import * as links from "@site/src/components/links.js"
 
-:::note
-Wasmbox requires Unity 2021.3.21 or greater
+## Requirements
+
+Wasmbox currently requires:
+ - Unity 2021.3.21 or greater
+ - Scripting backend: Mono
+
+:::warning
+Wasmbox is not currently compatible with IL2CPP!
 :::
+
+## Installation Step-By-Step
 
 1. Purchase Wasmbox on the <links.AssetStore />.
 1. Open the package manager (Window > Package Manager).
