@@ -5,13 +5,13 @@ sidebar_position: 0
 
 This scene demonstrates the most basic usage of <b>Wasmbox</b>.
 
-The `Demo Object` has a `BasicMonoBehaviourDemoScript` attached. This uses the `SimpleWasmMonoBehaviour` to load a WASM file into memory. Once the file is loaded it calls a function which doubles a number, the output is shown at the bottom of the screen.
+The `Demo Object` has a `BasicMonoBehaviourDemoScript` attached. This uses the [`SimpleWasmMonoBehaviour`](./../../reference/code/simplewasmmonobehaviour.md) to load a WASM file into memory. Once the file is loaded it calls a function which doubles a number, the output is shown at the bottom of the screen.
 
 1. Open `AWatFile.wat` in a text editor, this is raw WebAssembly Text (WAT).
 
 2. Inspect the `Demo Object`.
    a. `AWatFile.wat` has been dropped into the `Wasm Asset` property.
-   b. `Engine Config` sets how the asset is compiled and run, this can usually be left at the default settings.
+   b. [`Engine Config`](./../../reference/code/engineconfig.md) sets how the asset is compiled and run, this can usually be left at the default settings.
 
 3. Open `BasicMonoBehaviourDemoScript.cs`.
    a. `SimpleWasmMonoBehaviour<AWatFile>` is used instead of `MonoBehaviour`.
