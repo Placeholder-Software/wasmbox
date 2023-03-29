@@ -4,7 +4,7 @@
         <title>Wasmbox Blog</title>
         <link>https://placeholder-software.github.io/wasmbox/releases</link>
         <description>Wasmbox Blog</description>
-        <lastBuildDate>Mon, 13 Mar 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Apr 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,9 +12,9 @@
             <title><![CDATA[v1.0.0]]></title>
             <link>https://placeholder-software.github.io/wasmbox/releases/v1.0.0</link>
             <guid>https://placeholder-software.github.io/wasmbox/releases/v1.0.0</guid>
-            <pubDate>Mon, 13 Mar 2023 00:00:00 GMT</pubDate>
+            <pubDate>Fri, 07 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[The first release of Wasmbox! Since this is the very first release it is likely you will encounter bugs, awkward APIs or missing features. Please direct feedback to  or the .]]></description>
-            <content:encoded><![CDATA[<p>The first release of Wasmbox! Since this is the very first release it is likely you will encounter bugs, awkward APIs or missing features. Please direct feedback to <a href="https://discord.gg/3RtDa2M9Bx">Discord</a> or the <a href="https://github.com/Placeholder-Software/wasmbox/issues">Issue Tracker</a>.</p><p>todo:set the date when asset is released</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a href="#features-" class="hash-link" aria-label="Direct link to Features 🚀" title="Direct link to Features 🚀">​</a></h2><ul><li>Wasmtime based WASM runtime for Unity.</li><li>Custom WASI implementation.</li><li>Optimising import pipeline.</li><li>Unity <a href="https://docs.unity3d.com/Manual/JobSystem.html" target="_blank" rel="noopener noreferrer">Job System</a> compatible.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a href="#bugfixes-" class="hash-link" aria-label="Direct link to Bugfixes 🐛" title="Direct link to Bugfixes 🐛">​</a></h2><ul><li>None.</li></ul>]]></content:encoded>
+            <content:encoded><![CDATA[<p>The first release of Wasmbox! Since this is the very first release it is likely you will encounter bugs, awkward APIs or missing features. Please direct feedback to <a href="https://discord.gg/3RtDa2M9Bx">Discord</a> or the <a href="https://github.com/Placeholder-Software/wasmbox/issues">Issue Tracker</a>.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a href="#features-" class="hash-link" aria-label="Direct link to Features 🚀" title="Direct link to Features 🚀">​</a></h2><ul><li>Wasmtime based WASM runtime for Unity.</li><li>Custom WASI implementation.</li><li>Optimising import pipeline.</li><li>Unity <a href="https://docs.unity3d.com/Manual/JobSystem.html" target="_blank" rel="noopener noreferrer">Job System</a> compatible.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a href="#bugfixes-" class="hash-link" aria-label="Direct link to Bugfixes 🐛" title="Direct link to Bugfixes 🐛">​</a></h2><ul><li>None.</li></ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
