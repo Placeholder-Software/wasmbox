@@ -3,7 +3,7 @@ title: Basic MonoBehaviour
 sidebar_position: 0
 ---
 
-This scene demonstrates the most basic usage of <b>Wasmbox</b>.
+This scene demonstrates the most basic usage of <b>Wasmbox</b>. It is located in `Assets\Plugins\PlaceholderSoftware\Wasmbox\Demos`.
 
 The `Demo Object` has a `BasicMonoBehaviourDemoScript` attached. This uses the [`SimpleWasmMonoBehaviour`](./../../reference/code/simplewasmmonobehaviour.md) to load a WASM file into memory. Once the file is loaded it calls a function which doubles a number, the output is shown at the bottom of the screen.
 
