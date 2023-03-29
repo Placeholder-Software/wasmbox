@@ -1,6 +1,6 @@
 ---
 title: WASI Demo
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 This scene demonstrates the most usage of WASI (WebAssembly System Interface) with <b>Wasmbox</b>. It is located in `Assets\Plugins\PlaceholderSoftware\Wasmbox\Demos`.

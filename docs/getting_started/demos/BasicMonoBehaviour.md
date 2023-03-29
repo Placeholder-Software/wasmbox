@@ -1,6 +1,6 @@
 ---
 title: Basic MonoBehaviour
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 This scene demonstrates the most basic usage of <b>Wasmbox</b>. It is located in `Assets\Plugins\PlaceholderSoftware\Wasmbox\Demos`.
