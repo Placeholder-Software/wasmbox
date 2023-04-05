@@ -33,6 +33,7 @@ linker.DefineFunction("module", "add", (int a, int b) => a + b);
 
 // Method
 linker.DefineFunction("module", "sub", Subtract);
+
 static int Subtract(int a, int b)
 {
     return a - b;
