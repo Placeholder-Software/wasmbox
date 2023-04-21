@@ -10,7 +10,7 @@ The basic use of Wasmbox has a WASM/WAT file [imported](../reference/editor/impo
 
 ## Dynamic Wasm Asset
 
-The [`DynamicWasmAsset`](./../reference/code/dynamicwasmasset.md) provides a way to create a WasmAsset a runtime from a file that was never processed in the editor. It can be loaded from raw WASM bytes, or [Web Assembly Text](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format) format.
+The [`DynamicWasmAsset`](./../reference/code/dynamicwasmasset.md) provides a way to create a WasmAsset at runtime from a file that was never processed in the editor. It can be loaded from raw WASM bytes, or [Web Assembly Text](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format) format.
 
 ### WASM Bytes
 

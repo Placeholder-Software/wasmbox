@@ -21,7 +21,7 @@ WASM supports a [very limited set of types](/docs/reference/code/wasmtime/valuek
 
 ## Example
 
-To add things to a [`Linker`](/docs/reference/code/wasmtime/linker.md) simply _Define_ them. The simplest use case is directly adding a [C# function to call](#add-a-function) or adding a [WASI feature](#define-a-wasi-feature). Alternatively complex systems can be assembled from multiple independent WASM modules by [adding an Instance](#add-another-instance) or [adding a Module](#add-a-module).
+To add things to a [`Linker`](/docs/reference/code/wasmtime/linker.md) simply _Define_ them. The simplest use case is directly adding a [C# function to call](#defining-functions) or adding a [WASI feature](#defining-wasi-features). Alternatively complex systems can be assembled from multiple independent WASM modules by [adding an Instance](#defining-an-instance) or [adding a Module](#defining-a-module).
 
 ### Defining Functions
 

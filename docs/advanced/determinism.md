@@ -24,7 +24,7 @@ To disable SIMD you must check the [importer precompile settings](../reference/e
 
 ## WASI
 
-WASI (Web Assembly System Interface) provides access to system resources such as clocks, random numbers and the file system. All of these resources are non-deterministic by.
+WASI (Web Assembly System Interface) provides access to system resources such as clocks, random numbers and the file system. All of these resources are non-deterministic by nature.
 
 Wasmbox provides multiple implementations of most WASI features, some of which can be used to provide determinism. For example the [Random Number Generator](../reference/code/WASI/random.md) has two implementations: [CryptoRandomSource](../reference/code/WASI/random.md#cryptorandomsource) provides truly random numbers (non-deterministic) and the [FastRandomSource](../reference/code/WASI/random.md#fastrandomsource) provides pseudo random numbers from a seed value (deterministic).
 
