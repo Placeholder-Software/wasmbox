@@ -4,10 +4,18 @@
         <title>Wasmbox Blog</title>
         <link>https://placeholder-software.github.io/wasmbox/releases</link>
         <description>Wasmbox Blog</description>
-        <lastBuildDate>Fri, 07 Apr 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Apr 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[v8.0.0]]></title>
+            <link>https://placeholder-software.github.io/wasmbox/releases/v8.0.0</link>
+            <guid>https://placeholder-software.github.io/wasmbox/releases/v8.0.0</guid>
+            <pubDate>Mon, 24 Apr 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is the first update of Wasmbox. Wasmbox is very new, so it is likely you will encounter bugs, awkward APIs or missing features. Please direct feedback to  or the .]]></description>
+            <content:encoded><![CDATA[<p>This is the first update of Wasmbox. Wasmbox is very new, so it is likely you will encounter bugs, awkward APIs or missing features. Please direct feedback to <a href="https://discord.gg/3RtDa2M9Bx">Discord</a> or the <a href="https://github.com/Placeholder-Software/wasmbox/issues">Issue Tracker</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-happened-to-version-200---700">What Happened to Version <code>2.0.0</code> -&gt; <code>7.0.0</code>?<a href="#what-happened-to-version-200---700" class="hash-link" aria-label="Direct link to what-happened-to-version-200---700" title="Direct link to what-happened-to-version-200---700">​</a></h3><p>The <a href="/wasmbox/releases/v1.0.0/">previous version</a> of Wasmbox was <code>1.0.0</code> and this is version <code>8.0.0</code>. This is because we are adopting the same <a href="https://docs.wasmtime.dev/stability-release.html" target="_blank" rel="noopener noreferrer">version/release scheme as Wasmtime</a>. Each month Wasmtime releases a new major version, Wasmbox will then be updated to use that version and will use the same major version number.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a href="#features-" class="hash-link" aria-label="Direct link to Features 🚀" title="Direct link to Features 🚀">​</a></h2><ul><li>Wasmtime <a href="https://github.com/bytecodealliance/wasmtime/blob/main/RELEASES.md#800" target="_blank" rel="noopener noreferrer">v8.0.0</a></li><li>Wasmtime-dotnet <a href="https://github.com/bytecodealliance/wasmtime-dotnet/releases/tag/v8.0.0" target="_blank" rel="noopener noreferrer">v8.0.0</a><ul><li>Caching <code>Function</code> objects</li><li>Caching <code>Function</code> wrappers</li><li>Caching <code>Global</code> objects</li><li>Caching <code>Global</code> wrappers</li><li>Caching <code>Memory</code> objects</li></ul></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugfixes-">Bugfixes 🐛<a href="#bugfixes-" class="hash-link" aria-label="Direct link to Bugfixes 🐛" title="Direct link to Bugfixes 🐛">​</a></h2><ul><li>None.</li></ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[v1.0.0]]></title>
             <link>https://placeholder-software.github.io/wasmbox/releases/v1.0.0</link>
