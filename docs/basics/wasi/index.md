@@ -96,6 +96,17 @@ linker.Define(clock);
 
 </TabItem>
 
+<TabItem value="ivirtualsocket" label="Socket">
+
+Functions which interact with networking are provided by an implementation of [`IVirtualSocket`](../../reference/code/WASI/socket.md). Wasmbox does not currently implement socket functionality, `NonFunctionalSocket` provides an implementation that does nothing. This can be used when using WASM files which requires the socket imports, but do not actually use them at runtime.
+
+```csharp
+var sock = new NonFunctionalSocket();
+linker.Define(sock);
+```
+
+</TabItem>
+
 <TabItem value="unknown" label="Unknown Feature">
 
 Not all WASI functions are supported by the built in Wasmbox WASI features. Please contacts us on [Discord](https://discord.gg/3RtDa2M9Bx) or on the [Issue Tracker](https://github.com/Placeholder-Software/wasmbox/issues) about the specific feature you need.
