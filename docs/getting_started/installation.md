@@ -18,14 +18,28 @@ Wasmbox is not currently compatible with IL2CPP!
 ## Installation Step-By-Step
 
 1. Purchase Wasmbox on the <links.AssetStore />.
-1. Open the package manager (Window > Package Manager).
-2. Switch to `My Assets`.
-3. Find `Wasmbox` in the list of assets.
-4. Click `Download` or `Update`.
-5. When the download is complete click `Import`.
+2. Open the package manager (Window > Package Manager).
+3. Switch to `My Assets`.
+4. Find `Wasmbox` in the list of assets.
+5. Click `Download` or `Update`.
+6. When the download is complete click `Import`.
 
 :::note
 The asset will be installed into `Assets/Plugins/PlaceholderSoftware/Wasmbox`
+:::
+
+## Upgrading Step-By-Step
+
+1. Close the Unity editor.
+2. Re-Open the Unity editor.
+3. Open the package manager (Window > Package Manager).
+4. Switch to `My Assets`.
+5. Find `Wasmbox` in the list of assets.
+6. Click `Download` or `Update`.
+7. When the download is complete click `Import`.
+
+:::warning
+The first two steps are important! Restarting the Unity editor ensures that the DLLs can be properly updated.
 :::
 
 ## Optional Extras
@@ -45,7 +59,7 @@ Wasmbox can make use of the Unity [Addressable Asset System](https://docs.unity3
 
 To use addressable loading:
 1. Install `Addressables` 1.19 or greater.
-2. Tick `Addressable Loading` when [importing](../reference/editor/import.md#6-code-generation) a WASM Asset.
+2. Tick `Addressable Loading` when [importing](../reference/editor/import.md#7-code-generation) a WASM Asset.
 
 :::caution
 
