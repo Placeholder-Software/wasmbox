@@ -4,10 +4,18 @@
         <title>Wasmbox Blog</title>
         <link>https://placeholder-software.github.io/wasmbox/releases</link>
         <description>Wasmbox Blog</description>
-        <lastBuildDate>Mon, 24 Apr 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 May 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[v9.0.0]]></title>
+            <link>https://placeholder-software.github.io/wasmbox/releases/v9.0.0</link>
+            <guid>https://placeholder-software.github.io/wasmbox/releases/v9.0.0</guid>
+            <pubDate>Wed, 24 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[This version of Wasmbox upgrades to Wasmtime v9.0.1.]]></description>
+            <content:encoded><![CDATA[<p>This version of Wasmbox upgrades to <code>Wasmtime v9.0.1</code>.</p><p>The new <code>IVirtualSocket</code> interface introduced in Wasmbox adds support for the Wasi-Socket proposal. The only implementation currently included in Wasmbox (<code>NonFunctionalSocket</code>) does <em>not</em> provide network connectivity, instead it always acts as if it is not connected to a network. This can be useful when a large compiled WASM program imports sockets, but you do not actually need networking connectivity for your use case.</p><p>Wasmbox is very new, so it is likely you will encounter bugs, awkward APIs or missing features. Please direct feedback to <a href="https://discord.gg/3RtDa2M9Bx">Discord</a> or the <a href="https://github.com/Placeholder-Software/wasmbox/issues">Issue Tracker</a>.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-">Features 🚀<a href="#features-" class="hash-link" aria-label="Direct link to Features 🚀" title="Direct link to Features 🚀">​</a></h2><ul><li>Wasmtime <a href="https://github.com/bytecodealliance/wasmtime/blob/main/RELEASES.md#900" target="_blank" rel="noopener noreferrer">v9.0.1</a></li><li>Wasmtime-dotnet <a href="https://github.com/bytecodealliance/wasmtime-dotnet/releases/tag/v9.0.1" target="_blank" rel="noopener noreferrer">v9.0.1</a><ul><li>Added <code>Store.SetLimits</code> which adds hard limits on the amount of memory that can be consumed by WASM.</li></ul></li><li>Added a <code>IVirtualSocket</code>, representing WASI socket support.</li><li>Added <code>NonFunctionalSocket</code>, an implementation of <code>IVirtualSocket</code> which acts as if it is not connected to a network.</li><li>Modified WASI interfaces to use <code>ref</code>,<code>out</code> and <code>Span&lt;T&gt;</code> parameters where possible instead of <code>Pointer&lt;T&gt;</code> and <code>Buffer&lt;T&gt;</code>. This significantly improves the user experience when interacting with these interfaces from <em>non</em> WASM code.</li></ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[v8.0.0]]></title>
             <link>https://placeholder-software.github.io/wasmbox/releases/v8.0.0</link>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwasmbox_docs=self.webpackChunkwasmbox_docs||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"All posts","items":[{"title":"v9.0.0","permalink":"/wasmbox/releases/v9.0.0"},{"title":"v8.0.0","permalink":"/wasmbox/releases/v8.0.0"},{"title":"v1.0.0","permalink":"/wasmbox/releases/v1.0.0"}]}')}}]);
