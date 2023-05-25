@@ -28,7 +28,7 @@ All runtime features of Wasmbox should work in any of the platforms listed here.
 | Windows ARM     | `aarch64-pc-windows-msvc`  | Tier 3       |
 | Linux           | `x86_64-unknown-linux-gnu` | Tier 1       |
 | Linux ARM (Desktop) | `aarch64-unknown-linux-gnu`| Tier 2   |
-| Linux ARM (Android) | `aarch64-unknown-linux-gnu`| Tier 3   |
+| Linux ARM (Android) | **Unsupported (WIP)** | **None**   |
 | MacOS           | `x86_64-apple-darwin`      | Tier 1       |
 | MacOS ARM       | `aarch64-apple-darwin`     | Tier 3       |
 | iOS             | **Unsupported**            | **None**     |
