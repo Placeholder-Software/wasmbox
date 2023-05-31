@@ -1,5 +1,6 @@
 ---
 title: SimpleWasmMonoBehaviour
+sidebar_position: 9
 ---
 
 `SimpleWasmMonoBehaviour` provides an easy to use system which can load a WASM module and execute code in it, all from within a standard `MonoBehaviour`. For more information see [this tutorial](./../../basics/using_wasm.md).

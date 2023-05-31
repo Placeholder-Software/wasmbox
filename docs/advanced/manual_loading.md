@@ -44,7 +44,7 @@ Loading the asset with an [`EngineConfig`](./../reference/code/engineconfig.md) 
 
 :::tip
 
-Compiling a WASM Module is potentially a slow process if the asset is large and has not been [precompiled](./../reference/editor/import.md#4-compilation).
+Compiling a WASM Module is potentially a slow process if the asset is large and has not been [precompiled](./../reference/editor/import.md#5-compilation).
 
 :::
 
@@ -112,7 +112,7 @@ Now that you have complete control over the process of loading and instantiating
 
 ### Addressable Loading
 
-If "Addressable Loading" is enabled in the [importer](./../reference/editor/import.md#6-code-generation) then most of these steps can be skipped by using the `CreateAsync` method on the auto generated wrapper code. In particular no direct reference to the `WasmAsset` is ever required, it is automatically acquired through the addressable asset system.
+If "Addressable Loading" is enabled in the [importer](./../reference/editor/import.md#7-code-generation) then most of these steps can be skipped by using the `CreateAsync` method on the auto generated wrapper code. In particular no direct reference to the `WasmAsset` is ever required, it is automatically acquired through the addressable asset system.
 
 ```csharp
 public class DemoAddressableLoading

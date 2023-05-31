@@ -29,4 +29,4 @@ These section show what is **imported** by the WASM module. These things must be
 
 This section shows the results of precompiling and compressing the WASM bytes. The help box shows the overall reduction in size.
 
-If `Compilation` is enabled [in the importer](./import.md/#4-compilation) the coloured bars show the space used by the compiled code for each different platform.
+If `Compilation` is enabled [in the importer](./import.md/#5-compilation) the coloured bars show the space used by the compiled code for each different platform.

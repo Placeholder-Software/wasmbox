@@ -89,7 +89,7 @@ A [`LoadedModule`](../reference/code/loadedmodule.md) compiles the WASM code sto
 
 :::tip
 
-The editor importer can [precompile](../reference/editor/import.md#4-compilation) WASM code in the editor, which significantly speeds up loading at runtime.
+The editor importer can [precompile](../reference/editor/import.md#5-compilation) WASM code in the editor, which significantly speeds up loading at runtime.
 
 :::
 
@@ -123,7 +123,7 @@ Debug.Assert(result == 3);
 
 ### Generated Code
 
-An [`Instance`](../reference/code/wasmtime/instance.md) is a low level API that is often not very convenient to use directly. The Wasmbox editor importer can [generate code](../reference/editor/import.md#6-code-generation) which "wraps" an [`Instance`](../reference/code/wasmtime/instance.md) and makes it much more convenient (and efficient) to use.
+An [`Instance`](../reference/code/wasmtime/instance.md) is a low level API that is often not very convenient to use directly. The Wasmbox editor importer can [generate code](../reference/editor/import.md#7-code-generation) which "wraps" an [`Instance`](../reference/code/wasmtime/instance.md) and makes it much more convenient (and efficient) to use.
 
 ```csharp
 using (var wrapper = new GeneratedWrapper(instance, store))

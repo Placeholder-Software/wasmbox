@@ -20,7 +20,7 @@ To ensure deterministic execution across all platforms ensure that SIMD is **dis
 
 :::
 
-To disable SIMD you must check the [importer precompile settings](../reference/editor/import.md#4-compilation) and also the [EngineConfig](../reference/code/engineconfig.md#simd) used an runtime.
+To disable SIMD you must check the [importer precompile settings](../reference/editor/import.md#5-compilation) and also the [EngineConfig](../reference/code/engineconfig.md#simd) used an runtime.
 
 ## WASI
 

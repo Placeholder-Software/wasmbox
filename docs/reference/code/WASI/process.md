@@ -18,7 +18,7 @@ Terminate the process normally. An exit code of 0 indicates successful terminati
 
 #### `WasiError SchedulerYield(Caller caller)`
 
-Temporarily yield execution of the calling thread. The default implementation does not support this method.
+Temporarily yield execution of the calling thread. If [async WASM](./../../../advanced/asyncify.md) is in use this will unconditionally yield execution.
 
 #### `void Register(Linker linker)`
 

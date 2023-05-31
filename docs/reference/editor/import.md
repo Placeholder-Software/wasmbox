@@ -3,7 +3,7 @@ title: Importing WebAssembly
 sidebar_position: 1
 ---
 
-Wasmbox includes an import pipeline for WASM assets which validates, initialises, optimises, precompiles and compresses the WASM. Any `*.wasm` (binary WebAssembly) or `*.wat` (text WebAssembly) files will automatically be processed and imported through this pipeline into a [WasmAsset](wasmasset.md).
+Wasmbox includes an import pipeline for WASM assets which validates, initialises, transforms, optimises, precompiles and compresses the WASM. Any `*.wasm` (binary WebAssembly) or `*.wat` (text WebAssembly) files will automatically be processed and imported through this pipeline into a [WasmAsset](wasmasset.md).
 
 ## 1. Validation
 
@@ -11,7 +11,7 @@ Files will be parsed and validated before any further processing. Any errors in 
 
 ## 2. Initialisation
 
-If `Preinitialization` is ticked the WASM will be processed through [Wizer](https://github.com/bytecodealliance/wizer). Wizer instantiates your WebAssembly module, executes its initialization function, and then snapshots the initialized state out into a new WebAssembly module.
+If `Preinitialization` is ticked the WASM will be processed through [Wizer](https://github.com/bytecodealliance/wizer). Wizer instantiates your WebAssembly module, executes its initialization function, and then snapshots the initialized state out into a new WebAssembly module. This allows one-off initialization to be done now, instead of when the module is loaded at runtime.
 
 :::caution
 
@@ -19,7 +19,7 @@ Wizer does not support all WASM features and not all modules can be pre-initiali
 
 :::
 
-:::tip Inspector Options
+:::note Inspector Options
 
 ![Preinitialize Inspector](/img/WizerPreinitializeInspector.png)
 
@@ -33,7 +33,19 @@ Wizer does not support all WASM features and not all modules can be pre-initiali
 
 :::
 
-## 3. Optimisation
+## 3. Transformation
+
+If `Transformation` is ticked the WASM will be rewritten to introduce new capabilities.
+
+:::note Inspector Options
+
+![Optimization Inspector](/img/TransformationInspector.png)
+
+ - `Asyncify`: Rewrite all functions to make them [async](./../../advanced/asyncify.md), allowing execution to be suspended and then resumed later.
+
+:::
+
+## 4. Optimisation
 
 If `Optimization` is ticked the WASM will be processed through [Binaryen](https://github.com/WebAssembly/binaryen#wasm-opt). `Binaryen` is an optimizer which applies [a larger number of optimisation passes](https://github.com/WebAssembly/binaryen#binaryen-optimizations) to produce to better (faster/smaller) WASM.
 
@@ -43,7 +55,7 @@ Binaryen does not support all WASM features and not all modules can be optimized
 
 :::
 
-:::tip Inspector Options
+:::note Inspector Options
 
 ![Optimization Inspector](/img/BinaryenOptimizationInspector.png)
 
@@ -54,14 +66,15 @@ Binaryen does not support all WASM features and not all modules can be optimized
         - `Size`: Optimize mostly for speed.
         - `Extreme Size`: Optimize for absolutely minimum code size.
  - `Binaryen Fast Math`: Optimize floating point maths without properly handling corner cases of NaNs and rounding.
+ - `Binaryen Asyncify`: Convert WASM into [async WASM](./../../advanced/asyncify.md), allowing execution to be suspended and resumed.
 
 :::
 
-## 4. Compilation
+## 5. Compilation
 
 If `Compilation` is ticked the WASM will be pre-compiled into native machine code for all active platforms. This increases the asset size (often by a factor of 10x or more) but can reduce loading times at runtime. If compiled code cannot be loaded for some reason (e.g. incompatible architecture, pre-compilation is not enabled) the runtime loading will fall back to using the "Universal" version.
 
-:::tip Inspector Options
+:::note Inspector Options
 
 ![Compilation Inspector](/img/CompilationInspector.png)
 
@@ -72,11 +85,11 @@ If `Compilation` is ticked the WASM will be pre-compiled into native machine cod
 
 :::
 
-## 5. Compression
+## 6. Compression
 
 Compress the final WASM to reduce size, this can reduce loading time if storage is slow.
 
-:::tip Inspector Options
+:::note Inspector Options
 
 ![Compression Inspector](/img/CompressionInspector.png)
 
@@ -91,7 +104,7 @@ Compress the final WASM to reduce size, this can reduce loading time if storage 
 
 :::
 
-## 6. Code Generation
+## 7. Code Generation
 
 If `Generate C# Wrapper Code` is ticked a script will be generated which wraps up the WASM module in a C# accessor. This handles many of the "low level" details of interacting with a WASM module. See [this documentation](/reference/code/codegeneration.md) for details on generated wrapper code.
 
@@ -101,7 +114,7 @@ Do not edit the auto generated code! It may be re-generated at any time, which w
 
 :::
 
-:::tip Inspector Options
+:::note Inspector Options
 
 ![Code Generation Inspector](/img/CodeGenerationInspector.png)
 

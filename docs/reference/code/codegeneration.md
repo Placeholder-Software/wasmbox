@@ -29,7 +29,7 @@ These functions must be defined in the [`Linker`](./wasmtime/linker.md) before t
 
 ## Optional Features
 
-The [importer](../editor/import.md#6-code-generation) includes several optional features which slightly change how the code is generated.
+The [importer](../editor/import.md#7-code-generation) includes several optional features which slightly change how the code is generated.
 
 ### Addressable Loading
 

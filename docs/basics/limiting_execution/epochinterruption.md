@@ -25,7 +25,7 @@ config.UseEpochInterruption = true;
 
 :::tip
 
-If the WASM Asset is precompiled it must **also** be enabled in the [importer](../../reference/editor/import.md#4-compilation):
+If the WASM Asset is precompiled it must **also** be enabled in the [importer](../../reference/editor/import.md#5-compilation):
 
 ![Compilation Inspector](/img/CompilationInspector.png)
 
