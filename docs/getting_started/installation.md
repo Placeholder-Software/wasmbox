@@ -31,6 +31,7 @@ The asset will be installed into `Assets/Plugins/PlaceholderSoftware/Wasmbox`
 ## Upgrading Step-By-Step
 
 1. Close the Unity editor.
+2. Delete `Assets/Plugins/PlaceholderSoftware/Wasmbox`
 2. Re-Open the Unity editor.
 3. Open the package manager (Window > Package Manager).
 4. Switch to `My Assets`.
@@ -39,7 +40,7 @@ The asset will be installed into `Assets/Plugins/PlaceholderSoftware/Wasmbox`
 7. When the download is complete click `Import`.
 
 :::warning
-The first two steps are important! Restarting the Unity editor ensures that the DLLs can be properly updated.
+The first two steps are important! Deleting the plugin ensures that Unity can replace the native DLLs.
 :::
 
 ## Optional Extras
