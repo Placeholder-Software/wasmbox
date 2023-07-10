@@ -5,9 +5,18 @@ sidebar_position: 1
 
 Wasmbox includes an import pipeline for WASM assets which validates, initialises, transforms, optimises, precompiles and compresses the WASM. Any `*.wasm` (binary WebAssembly) or `*.wat` (text WebAssembly) files will automatically be processed and imported through this pipeline into a [WasmAsset](wasmasset.md).
 
-## 1. Validation
+## 1. General
 
-Files will be parsed and validated before any further processing. Any errors in the file will print an error to the console.
+Settings which apply to the rest of the entire pipeline.
+
+:::note Inspector Options
+
+![Preinitialize Inspector](/img/ImportGeneralSettingsInspector.png)
+
+ - `Non Deterministic`
+    - Enable extra optimizations which will produce faster code but may produce different results on different platforms.
+
+:::
 
 ## 2. Initialisation
 
