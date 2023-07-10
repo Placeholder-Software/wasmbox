@@ -107,6 +107,24 @@ linker.Define(sock);
 
 </TabItem>
 
+<TabItem value="ivirtualeventpoll" label="Event Polling">
+
+:::tip
+
+Event Polling **requires** that the program supports [async execution](./../../advanced/asyncify.md).
+
+:::
+
+Functions which interact with event polling are provided by an implementation of [`IVirtualEventPoll`](../../reference/code/WASI/poll.md). Event polling allows a WASM program to be suspended until an event occurs (e.g. time elapsed).
+
+```csharp
+var clock = new RealtimeClock();
+var poll = new VirtualEventPoll(clock);
+linker.Define(poll);
+```
+
+</TabItem>
+
 <TabItem value="unknown" label="Unknown Feature">
 
 Not all WASI functions are supported by the built in Wasmbox WASI features. Please contacts us on [Discord](https://discord.gg/3RtDa2M9Bx) or on the [Issue Tracker](https://github.com/Placeholder-Software/wasmbox/issues) about the specific feature you need.
