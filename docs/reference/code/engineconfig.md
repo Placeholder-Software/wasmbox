@@ -29,10 +29,6 @@ Include support for `Epoch Interruption` in compiled code. When enabled executin
 
 For more details on epoch interruption, see [this tutorial](/docs/basics/limiting_execution/epochinterruption.md).
 
-### `SIMD`
-
-Enable SIMD instructions in compiled code. This can be significantly faster but may be [non-deterministic](./../../advanced/determinism.md).
-
 ### `EpochGroup`
 
 All identical `EngineConfig` objects will share the same underlying `Engine`. However when `Engine.IncrementEpoch()` is called it applies to _all_ instances created by that `Engine`, which may be undesirable. The `EpochGroup` is a way to force two `EngineConfig` objects to not be identical.
@@ -45,6 +41,10 @@ Set the optimization priority for generated code:
  - `None`: Generated code will not be optimized at all.
  - `Speed` (**default**): Generated code will be optimized purely for speed.
  - `SpeedAndSize` Generated code will be optimized for a balance of speed and size (some speed optimizations which cause the generated code to be significantly larger are disabled).
+
+### `NonDeterministic`
+
+Enable non-deterministic execution. This can be faster to execute, but will not produce identical results on different platforms.
 
 ## Methods
 
