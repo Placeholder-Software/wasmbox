@@ -3,31 +3,37 @@ title: Determinism
 sidebar_position: 1
 ---
 
-WebAssembly (WASM) is deterministic in that it guarantees that the execution of a given module with the same input values will always produce the same output values, regardless of the platform or implementation used to run the module. This means that the execution of a WebAssembly module is predictable and reproducible. 
+WebAssembly (WASM) is deterministic - it guarantees that the execution of a given module with the same input values will always produce the same output values, regardless of the platform or implementation used to run the module. This means that the execution of a WebAssembly module is predictable and reproducible.
 
-However, it is possible to beak the determinism guarantees of WASM through several features ([read more](https://github.com/WebAssembly/design/blob/main/Nondeterminism.md)):
- - SIMD
- - WASI
- - Threads
+Wasmbox includes a checkbox on the [importer](./../reference/editor/import.md#1-general) which configures the importer pipeline (optimiser and compiler) to allow non-deterministic code.
 
-## SIMD
+:::note
 
-SIMD (Single Instruction Multiple Data) instructions can potentially bring a huge speedup to heavily mathematical code. However, the exact semantics of SIMD may differ slightly when run on different hardware platforms.
-
-:::tip
-
-To ensure deterministic execution across all platforms ensure that SIMD is **disabled**.
+By default the output of the importer pipeline will be deterministic. Non-determinism must be deliberately _enabled_.
 
 :::
 
-To disable SIMD you must check the [importer precompile settings](../reference/editor/import.md#5-compilation) and also the [EngineConfig](../reference/code/engineconfig.md#simd) used an runtime.
-
 ## WASI
 
-WASI (Web Assembly System Interface) provides access to system resources such as clocks, random numbers and the file system. All of these resources are non-deterministic by nature.
+[WASI](./../basics/wasi/index.md) provides WebAssembly code with access to a large set of features, some of which may introduce non-determinism. For example the realtime clock provides access to the actual time, which changes every time it is read, this is non-deterministic. All Wasmbox WASI implementations can be made to act deterministically:
 
-Wasmbox provides multiple implementations of most WASI features, some of which can be used to provide determinism. For example the [Random Number Generator](../reference/code/WASI/random.md) has two implementations: [CryptoRandomSource](../reference/code/WASI/random.md#cryptorandomsource) provides truly random numbers (non-deterministic) and the [FastRandomSource](../reference/code/WASI/random.md#fastrandomsource) provides pseudo random numbers from a seed value (deterministic).
+ - [IVirtualRandomSource](./../reference/code/WASI/random.md):
+   - `CryptoRandomSource` is truly random (non-deterministic).
+   - `FastRandomSource` is seeded pseudo-random (deterministic).
+ - [IVirtualClock](./../reference/code/WASI/clock.md):
+   - `RealtimeClock` provides the real time (non-deterministic).
+   - `ManualClock` only "ticks" when specifically instructed to (deterministic).
+ - [IVirtualEnvironment](./../reference/code/WASI/environment.md):
+   - `VirtualEnvironment` is deterministic if the real environment variables are not exposed (`PassthroughEnvironmentVariables()`).
+ - [IVirtualFileSystem](./../reference/code/WASI/filesystem.md):
+   - `VirtualFileSystem` is deterministic if the real filesystem is not exposed.
+ - [IVirtualEventPoll](./../reference/code/WASI/poll.md):
+   - `VirtualEventPoll` depends on the clock and the file system, it is deterministic if they are.
+ - [IVirtualProcess](./../reference/code/WASI/process.md):
+   - `VirtualProcess` is always deterministic.
+ - [IVirtualSocket](./../reference/code/WASI/socket.md):
+   - `NonFunctionalSocket` is always deterministic.
 
 ## Threads
 
-[`wasm-threads`](https://github.com/WebAssembly/proposals/issues/14) is a proposed extension to WASM which adds support for multiple execution threads. It is not supported within Wasmbox.
+[`wasm-threads`](https://github.com/WebAssembly/proposals/issues/14) is a proposed extension to WASM which adds support for multiple execution threads. It is not currently supported within Wasmbox.
