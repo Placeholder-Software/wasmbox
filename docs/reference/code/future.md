@@ -17,7 +17,7 @@ var future = Wrapper.run_example_method(1, 2, 3, 4);
 yield return future;
 
 // Get the final result
-future.TryComplete(out var result)
+future.TryGetResult(out var result)
 Debug.Log(result);
 ```
 

@@ -24,7 +24,7 @@ The model is very similar to a Unity coroutine, where yielding allows you to del
 var future = Wrapper.run_example_method(1, 2, 3, 4);
 
 // Resume execution every frame until it is completed
-while (!future.TryComplete(out var result))
+while (!future.TryGetResult(out var result))
 {
     future.Resume();
     yield return null;
@@ -36,7 +36,7 @@ Debug.Log(result);
 
 ## Error Handling
 
-Wasmbox supports two types of error handling: [exceptions and results](./../reference/code/codegeneration.md#trap-handling), both are supported by async wasm. If results are in use then the `Future<T>` will return the result container from `TryComplete`. If exceptions are in use then the exception will be **thrown** when `TryComplete` is called.
+Wasmbox supports two types of error handling: [exceptions and results](./../reference/code/codegeneration.md#trap-handling), both are supported by async wasm. If results are in use then the `Future<T>` will return the result container from `TryGetResult`. If exceptions are in use then the exception will be **thrown** when `TryGetResult` is called.
 
 ## Unity Job System
 
@@ -56,7 +56,7 @@ var future = Wrapper.run_example_method(1, 2, 3, 4);
 yield return future.ToJob()
 
 // Do something with the final return result
-future.TryComplete(out var result);
+future.TryGetResult(out var result);
 Debug.Log(result);
 ```
 
@@ -73,7 +73,7 @@ var future2 = Wrapper.run_example_method(4, 3, 2, 1); // This will throw an `Inv
 
 ### Single Result
 
-When a result is retrieved by calling `Future<T>.TryComplete` the memory backing that future is internally cleaned up. All calls to `Resume` and `TryComplete` after this will throw an `InvalidOperationException`. **The following code will throw an exception**:
+When a result is retrieved by calling `Future<T>.TryGetResult` the memory backing that future is internally cleaned up. All calls to `Resume` and `TryGetResult` after this will throw an `InvalidOperationException`. **The following code will throw an exception**:
 
 ```csharp title="Don't Do This!"
 // Call an async method
@@ -83,11 +83,11 @@ var future = Wrapper.run_example_method(1, 2, 3, 4);
 yield return future;
 
 // Get the result
-future.TryComplete(out var result);
+future.TryGetResult(out var result);
 Debug.Log(result);
 
 // These will throw an `InvalidOperationException`
-future.TryComplete(out var result); 
+future.TryGetResult(out var result); 
 future.Resume();
 ```
 
@@ -103,5 +103,5 @@ var future = Wrapper.this_returns_void(1, 2, 3, 4);
 yield return future;
 
 // Get the "result", you can't do anything with it because it represents nothing, but it's there!
-future.TryComplete(out var result);
+future.TryGetResult(out var result);
 ```
