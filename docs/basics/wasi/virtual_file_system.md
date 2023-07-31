@@ -132,3 +132,13 @@ Create a new directory in the virtual file system which is a real directory on d
 WASM code can read and write this directory and all child files!
 
 :::
+
+### `MapReadonlyZipArchiveDirectory(string name, string hostPath)`
+
+Create a new child directory with the given `name`. The contents are read from the zip archive located at `hostPath`.
+
+:::warning
+
+The mounted zip archive is read-only and **must not** be modified while mounted.
+
+:::
